@@ -1,0 +1,174 @@
+*Lunix/config.old
+Lunux/build/
+Lunix/images/
+Lunix/.petalinux/*
+!.petalinux/metadata
+*.o
+*.jou
+*.log
+
+#########################################################################################################
+##	This is an example .gitignore file for Vivado, please treat it as an example as 
+##	it might not be complete. In addition, XAPP 1165 should be followed.
+#########################################################################################################
+#########
+#Exclude all
+#########
+*
+!*/
+!.gitignore
+###########################################################################
+##	VIVADO
+###########################################################################
+#########
+#Source files:
+#########
+#Do NOT ignore VHDL, Verilog, block diagrams or EDIF files.
+!*.vhd
+!*.v
+!*.bd
+!*.edif
+#########
+#IP files
+#########
+#.xci: synthesis and implemented not possible - you need to return back to the previous version to generate output products
+#.xci + .dcp: implementation possible but not re-synthesis
+#*.xci(www.spiritconsortium.org)
+!*.xci
+#*.dcp(checkpoint files)
+!*.dcp
+!*.vds
+!*.pb
+#All bd comments and layout coordinates are stored within .ui
+!*.ui
+!*.ooc
+#########
+#System Generator
+#########
+!*.mdl
+!*.slx
+!*.bxml
+#########
+#Simulation logic analyzer
+#########
+!*.wcfg
+!*.coe
+#########
+#MIG
+#########
+!*.prj
+!*.mem
+#########
+#Project files
+#########
+#XPR  +  *.XML ? XPR (Files are merged into a single XPR file for 2014.1 version)
+#Do NOT ignore *.xpr files
+!*.xpr
+#Include *.xml files for 2013.4 or earlier version
+!*.xml
+#########
+#Constraint files
+#########
+#Do NOT ignore *.xdc files
+!*.xdc
+#########
+#TCL - files
+#########
+!*.tcl
+#########
+#Journal - files
+#########
+!*.jou
+#########
+#Reports
+#########
+!*.rpt
+!*.txt
+!*.vdi
+#########
+#C-files
+#########
+!*.c
+!*.h
+!*.elf
+!*.bmm
+!*.xmp
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+#Xilinx ISE files
+UROP
+
+#Xilinx EDK files
+blockkdiagram/
+synthesis/
+project/base_systems/ml505/blockdiagram/*
+#project/base_systems/ml505/implementation/*
+
+project/base_systems/ml506/implementation/*
+project/base_systems/ml506/blockdiagram/*
+__xps
+*.log
+*.svf
+*.scr
+*.cmd
+*.bak
+*.elf
+#*.ace
+*.bsb
+*.make
+XpsGuiSessionLock
+*.opt
+*.ut
+*.filters
+*.gui
+*.xrpt
+*.ngc
+*.xpi
+*.bld
+*.map
+*.blc
+*.drc
+*.bmm
+*.mrp
+*.ncd
+*.pcf
+*.par
+*.pad
+*.bgn
+*.flw
+*.twr
+*.twx
+*.unroutes
+*.ncf
+*.ngm
+*.ptwx
+*.xwbt
+*.ngd
+*.edn
+*.ngo
+_xmsgs
+cache
+revup/
+#bak files
+*.bak
+
+#examples directory
+examples/
+
+#swp files
+*.swp
+
+#XPS files
+base_systems/ml505/__xps/
