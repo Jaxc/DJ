@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.2.1 (64-bit)
+# SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
+# IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
+# Start of session at: Tue Nov 10 19:50:11 2015
+# Process ID: 2723
+# Log file: /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/synth_1/system_wrapper.vds
+# Journal file: /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jaxc/FPGA/IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.2/data/ip'.
+Command: synth_design -top system_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1015.871 ; gain = 210.121 ; free physical = 923 ; free virtual = 6216
+---------------------------------------------------------------------------------

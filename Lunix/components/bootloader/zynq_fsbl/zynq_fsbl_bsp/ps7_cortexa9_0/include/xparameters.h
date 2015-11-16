@@ -121,7 +121,7 @@
 
 /* Definitions for peripheral JAXC_I2S_1 */
 #define XPAR_JAXC_I2S_1_BASEADDR 0x43C00000
-#define XPAR_JAXC_I2S_1_HIGHADDR 0x43C0FFFF
+#define XPAR_JAXC_I2S_1_HIGHADDR 0x43C00FFF
 
 
 /* Definitions for peripheral PS7_AFI_0 */

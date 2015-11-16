@@ -93,7 +93,7 @@ static int proc_FIFO_read(struct inode* inode, char __user *buffer, struct file*
       return 0;
     }
     
-    FIFO_value = ioread32(base_addr + (read_adress * 4));
+    FIFO_value = ioread32(&res->start + (read_adress * 4));
 
 
 
@@ -158,7 +158,7 @@ static int proc_FIFO_write(struct file *file, const char __user * buf,
       FIFO_v = (buf[0]<<24) + (buf[1]<<16) + (buf[2]<<8) + buf[3];
     }
      wmb();
-     iowrite32(FIFO_v, base_addr+write_adress*4);
+     iowrite32(FIFO_v, &res->start+write_adress*4);
      write_adress++;
      //printk("<1> write adress 0x%08x, read adress 0x%08x\n",write_adress,read_adress);
 

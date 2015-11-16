@@ -2,8 +2,8 @@
 # Vivado v2015.2.1 (64-bit)
 # SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
 # IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
-# Start of session at: Sun Nov  1 15:17:56 2015
-# Process ID: 27426
+# Start of session at: Thu Nov 12 12:36:18 2015
+# Process ID: 3154
 # Log file: /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/synth_1/system_wrapper.vds
 # Journal file: /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -17,7 +17,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1015.871 ; gain = 210.121 ; free physical = 543 ; free virtual = 4219
+Starting RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1015.875 ; gain = 210.121 ; free physical = 516 ; free virtual = 6036
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'system_wrapper' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:51]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12936' bound to instance 'iic_0_scl_iobuf' of component 'IOBUF' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:107]
@@ -28,9 +28,9 @@ INFO: [Synth 8-638] synthesizing module 'IOBUF' [/opt/Xilinx/Vivado/2015.2/scrip
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12936]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12936' bound to instance 'iic_0_sda_iobuf' of component 'IOBUF' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:114]
-INFO: [Synth 8-3491] module 'system' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3488' bound to instance 'system_i' of component 'system' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:121]
-INFO: [Synth 8-638] synthesizing module 'system' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3533]
-INFO: [Synth 8-3491] module 'system_BTNs_4Bits_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_BTNs_4Bits_0/synth/system_BTNs_4Bits_0.vhd:59' bound to instance 'BTNs_4Bits' of component 'system_BTNs_4Bits_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4246]
+INFO: [Synth 8-3491] module 'system' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3452' bound to instance 'system_i' of component 'system' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'system' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3497]
+INFO: [Synth 8-3491] module 'system_BTNs_4Bits_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_BTNs_4Bits_0/synth/system_BTNs_4Bits_0.vhd:59' bound to instance 'BTNs_4Bits' of component 'system_BTNs_4Bits_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4210]
 INFO: [Synth 8-638] synthesizing module 'system_BTNs_4Bits_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_BTNs_4Bits_0/synth/system_BTNs_4Bits_0.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -192,7 +192,7 @@ INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (6#1) [/home/jaxc/FPGA/z
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (7#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/gpio_core.vhd:173]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (8#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:282]
 INFO: [Synth 8-256] done synthesizing module 'system_BTNs_4Bits_0' (9#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_BTNs_4Bits_0/synth/system_BTNs_4Bits_0.vhd:84]
-INFO: [Synth 8-3491] module 'system_CLK_DIV_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_0/synth/system_CLK_DIV_0_0.vhd:56' bound to instance 'CLK_DIV_0' of component 'system_CLK_DIV_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4269]
+INFO: [Synth 8-3491] module 'system_CLK_DIV_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_0/synth/system_CLK_DIV_0_0.vhd:56' bound to instance 'CLK_DIV_0' of component 'system_CLK_DIV_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4233]
 INFO: [Synth 8-638] synthesizing module 'system_CLK_DIV_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_0/synth/system_CLK_DIV_0_0.vhd:64]
 	Parameter Division_factor bound to: 4 - type: integer 
 	Parameter pos_edge bound to: 1 - type: integer 
@@ -202,7 +202,7 @@ INFO: [Synth 8-638] synthesizing module 'CLK_DIV' [/home/jaxc/FPGA/zybo_base_sys
 	Parameter pos_edge bound to: 1 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'CLK_DIV' (10#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/jaxcie.org/clk_div_v1_1/8d995eeb/CLK_DIV.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'system_CLK_DIV_0_0' (11#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_0/synth/system_CLK_DIV_0_0.vhd:64]
-INFO: [Synth 8-3491] module 'system_CLK_DIV_0_1' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_1/synth/system_CLK_DIV_0_1.vhd:56' bound to instance 'CLK_DIV_1' of component 'system_CLK_DIV_0_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4275]
+INFO: [Synth 8-3491] module 'system_CLK_DIV_0_1' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_1/synth/system_CLK_DIV_0_1.vhd:56' bound to instance 'CLK_DIV_1' of component 'system_CLK_DIV_0_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4239]
 INFO: [Synth 8-638] synthesizing module 'system_CLK_DIV_0_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_1/synth/system_CLK_DIV_0_1.vhd:64]
 	Parameter Division_factor bound to: 64 - type: integer 
 	Parameter pos_edge bound to: 0 - type: integer 
@@ -212,13 +212,13 @@ INFO: [Synth 8-638] synthesizing module 'CLK_DIV__parameterized1' [/home/jaxc/FP
 	Parameter pos_edge bound to: 0 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'CLK_DIV__parameterized1' (11#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/jaxcie.org/clk_div_v1_1/8d995eeb/CLK_DIV.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'system_CLK_DIV_0_1' (12#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_1/synth/system_CLK_DIV_0_1.vhd:64]
-INFO: [Synth 8-3491] module 'system_CLK_test_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_test_0_0/synth/system_CLK_test_0_0.vhd:56' bound to instance 'CLK_test_0' of component 'system_CLK_test_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4281]
+INFO: [Synth 8-3491] module 'system_CLK_test_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_test_0_0/synth/system_CLK_test_0_0.vhd:56' bound to instance 'CLK_test_0' of component 'system_CLK_test_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4245]
 INFO: [Synth 8-638] synthesizing module 'system_CLK_test_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_test_0_0/synth/system_CLK_test_0_0.vhd:65]
 INFO: [Synth 8-3491] module 'CLK_test' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/jaxcie.org/clk_test_v1_3/bce03a79/CLK_test.vhd:34' bound to instance 'U0' of component 'CLK_test' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_test_0_0/synth/system_CLK_test_0_0.vhd:86]
 INFO: [Synth 8-638] synthesizing module 'CLK_test' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/jaxcie.org/clk_test_v1_3/bce03a79/CLK_test.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'CLK_test' (13#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/jaxcie.org/clk_test_v1_3/bce03a79/CLK_test.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'system_CLK_test_0_0' (14#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_test_0_0/synth/system_CLK_test_0_0.vhd:65]
-INFO: [Synth 8-3491] module 'system_FIFO_top_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/synth/system_FIFO_top_0_0.vhd:56' bound to instance 'FIFO_top_0' of component 'system_FIFO_top_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4288]
+INFO: [Synth 8-3491] module 'system_FIFO_top_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/synth/system_FIFO_top_0_0.vhd:56' bound to instance 'FIFO_top_0' of component 'system_FIFO_top_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4252]
 INFO: [Synth 8-638] synthesizing module 'system_FIFO_top_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/synth/system_FIFO_top_0_0.vhd:92]
 INFO: [Synth 8-3491] module 'FIFO_top' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/new/FIFO_top.vhd:8' bound to instance 'U0' of component 'FIFO_top' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/synth/system_FIFO_top_0_0.vhd:168]
 INFO: [Synth 8-638] synthesizing module 'FIFO_top' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/new/FIFO_top.vhd:44]
@@ -996,26 +996,22 @@ WARNING: [Synth 8-3848] Net s_axi_rid in module/entity FIFO_top does not have dr
 WARNING: [Synth 8-3848] Net s_axi_rlast in module/entity FIFO_top does not have driver. [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/new/FIFO_top.vhd:38]
 INFO: [Synth 8-256] done synthesizing module 'FIFO_top' (28#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/new/FIFO_top.vhd:44]
 INFO: [Synth 8-256] done synthesizing module 'system_FIFO_top_0_0' (29#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/synth/system_FIFO_top_0_0.vhd:92]
-INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4328]
-INFO: [Synth 8-3491] module 'system_Jaxc_I2S_1_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/synth/system_Jaxc_I2S_1_0.vhd:56' bound to instance 'Jaxc_I2S_1' of component 'system_Jaxc_I2S_1_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4332]
+INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4292]
+INFO: [Synth 8-3491] module 'system_Jaxc_I2S_1_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/synth/system_Jaxc_I2S_1_0.vhd:56' bound to instance 'Jaxc_I2S_1' of component 'system_Jaxc_I2S_1_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4296]
 INFO: [Synth 8-638] synthesizing module 'system_Jaxc_I2S_1_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/synth/system_Jaxc_I2S_1_0.vhd:87]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-3491] module 'Jaxc_I2S_v1_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd:5' bound to instance 'U0' of component 'Jaxc_I2S_v1_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/synth/system_Jaxc_I2S_1_0.vhd:154]
-INFO: [Synth 8-638] synthesizing module 'Jaxc_I2S_v1_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd:56]
+INFO: [Synth 8-3491] module 'Jaxc_I2S_v1_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd:8' bound to instance 'U0' of component 'Jaxc_I2S_v1_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/synth/system_Jaxc_I2S_1_0.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'Jaxc_I2S_v1_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd:59]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
-	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-3491] module 'Jaxc_I2S_v1_0_S_AXI' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0_S_AXI.vhd:5' bound to instance 'Jaxc_I2S_v1_0_S_AXI_inst' of component 'Jaxc_I2S_v1_0_S_AXI' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd:100]
-INFO: [Synth 8-638] synthesizing module 'Jaxc_I2S_v1_0_S_AXI' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0_S_AXI.vhd:98]
-	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Jaxc_slave_AXI' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_Slave_axi.vhd:7' bound to instance 'slave' of component 'Jaxc_slave_AXI' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'Jaxc_slave_AXI' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_Slave_axi.vhd:36]
 	Parameter bus_width bound to: 64 - type: integer 
 	Parameter fast bound to: 0 - type: integer 
 	Parameter tra_edge bound to: 1 - type: integer 
 	Parameter rec_edge bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'cross_domain_bus' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/cross_domain_bus.vhd:34' bound to instance 'new_input_sample' of component 'cross_domain_bus' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0_S_AXI.vhd:459]
+INFO: [Synth 8-3491] module 'cross_domain_bus' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/cross_domain_bus.vhd:34' bound to instance 'new_input_sample' of component 'cross_domain_bus' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_Slave_axi.vhd:309]
 INFO: [Synth 8-638] synthesizing module 'cross_domain_bus' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/cross_domain_bus.vhd:53]
 	Parameter bus_width bound to: 64 - type: integer 
 	Parameter fast bound to: 0 - type: integer 
@@ -1025,14 +1021,14 @@ INFO: [Synth 8-256] done synthesizing module 'cross_domain_bus' (30#1) [/home/ja
 	Parameter fast bound to: 1 - type: integer 
 	Parameter tra_edge bound to: 0 - type: integer 
 	Parameter rec_edge bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'cross_domain_bit' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/cross_domain_bit.vhd:34' bound to instance 'req_sample' of component 'cross_domain_bit' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0_S_AXI.vhd:476]
+INFO: [Synth 8-3491] module 'cross_domain_bit' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/cross_domain_bit.vhd:34' bound to instance 'req_sample' of component 'cross_domain_bit' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_Slave_axi.vhd:326]
 INFO: [Synth 8-638] synthesizing module 'cross_domain_bit' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/cross_domain_bit.vhd:52]
 	Parameter fast bound to: 1 - type: integer 
 	Parameter tra_edge bound to: 0 - type: integer 
 	Parameter rec_edge bound to: 1 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'cross_domain_bit' (31#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/cross_domain_bit.vhd:52]
-INFO: [Synth 8-3491] module 'Output_buffer_Block_RAM' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/synth/Output_buffer_Block_RAM.vhd:59' bound to instance 'RAM' of component 'Output_buffer_Block_RAM' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0_S_AXI.vhd:496]
-INFO: [Synth 8-638] synthesizing module 'Output_buffer_Block_RAM' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/synth/Output_buffer_Block_RAM.vhd:71]
+INFO: [Synth 8-3491] module 'Output_buffer_Block_RAM' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/synth/Output_buffer_Block_RAM.vhd:59' bound to instance 'RAM' of component 'Output_buffer_Block_RAM' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_Slave_axi.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'Output_buffer_Block_RAM' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/synth/Output_buffer_Block_RAM.vhd:72]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -1062,16 +1058,16 @@ INFO: [Synth 8-638] synthesizing module 'Output_buffer_Block_RAM' [/home/jaxc/FP
 	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 64 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 64 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 512 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 512 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 9 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
 	Parameter C_INITB_VAL bound to: 0 - type: string 
-	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
 	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
 	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
 	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
@@ -1104,8 +1100,8 @@ INFO: [Synth 8-638] synthesizing module 'Output_buffer_Block_RAM' [/home/jaxc/FP
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     6.966099 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_2' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2.vhd:123' bound to instance 'U0' of component 'blk_mem_gen_v8_2' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/synth/Output_buffer_Block_RAM.vhd:229]
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.677075 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_2' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2.vhd:123' bound to instance 'U0' of component 'blk_mem_gen_v8_2' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/synth/Output_buffer_Block_RAM.vhd:231]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2__parameterized1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2.vhd:264]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
@@ -1136,16 +1132,16 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2__parameterized1' [/hom
 	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 64 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 64 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 512 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 512 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 9 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
 	Parameter C_INITB_VAL bound to: 0 - type: string 
-	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
 	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
 	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
 	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
@@ -1178,7 +1174,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2__parameterized1' [/hom
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     6.966099 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.677075 mW - type: string 
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2_synth__parameterized0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:193449]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
@@ -1210,16 +1206,16 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_v8_2_synth__parameterized0'
 	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 64 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 64 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 512 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 512 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 9 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
 	Parameter C_INITB_VAL bound to: 0 - type: string 
-	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
 	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
 	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
 	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
@@ -1277,16 +1273,16 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top__parameterized0' [/home
 	Parameter C_USE_BYTE_WEA_i bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 64 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 64 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 256 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 512 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 512 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 9 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
 	Parameter C_INITB_VAL bound to: 0 - type: string 
-	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
 	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
 	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
 	Parameter C_USE_BYTE_WEB_ALGO bound to: 0 - type: integer 
@@ -1316,7 +1312,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_top__parameterized0' [/home
 	Parameter C_COMMON_CLK bound to: 1 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
+	Parameter DOUBLING_RESOURCE_FIX bound to: 2 - type: integer 
 WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:4793]
 WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:4793]
 WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:4793]
@@ -1342,14 +1338,14 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_input_block__parameterized0' [/
 	Parameter C_REGCEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
-	Parameter C_WEA_I_WIDTH bound to: 8 - type: integer 
-	Parameter C_WRITE_WIDTH_A bound to: 64 - type: integer 
-	Parameter C_WRITE_WIDTH_A_CORE bound to: 64 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
-	Parameter C_ADDRA_WIDTH_CORE bound to: 8 - type: integer 
+	Parameter C_WEA_I_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_WIDTH_A_CORE bound to: 32 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 9 - type: integer 
+	Parameter C_ADDRA_WIDTH_CORE bound to: 9 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RSTB_WIDTH bound to: 1 - type: integer 
-	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
 	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
 	Parameter C_REGCEB_WIDTH bound to: 1 - type: integer 
 	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
@@ -1386,15 +1382,15 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr__parameterized
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
 	Parameter C_PRIM_TYPE_i bound to: 1 - type: integer 
-	Parameter C_USER_WIDTH bound to: 64 - type: integer 
-	Parameter C_USER_DEPTH bound to: 256 - type: integer 
+	Parameter C_USER_WIDTH bound to: 32 - type: integer 
+	Parameter C_USER_DEPTH bound to: 512 - type: integer 
 	Parameter C_TOTAL_PRIMS bound to: 1 - type: integer 
-	Parameter C_DEPTH_RESOLUTION bound to: 512 - type: integer 
+	Parameter C_DEPTH_RESOLUTION bound to: 1024 - type: integer 
 	Parameter C_START_WIDTH bound to: 320000'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
 	Parameter C_START_DEPTH bound to: 320000'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
-	Parameter C_PRIM_WIDTH bound to: 320000'b0000000000000000000000000100100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
-	Parameter C_PRIM_DEPTH bound to: 320000'b0000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
-	Parameter C_USED_WIDTH bound to: 320000'b0000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
+	Parameter C_PRIM_WIDTH bound to: 320000'b0000000000000000000000000010010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
+	Parameter C_PRIM_DEPTH bound to: 320000'b0000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
+	Parameter C_USED_WIDTH bound to: 320000'b0000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000... (message truncated)
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: Output_buffer_Block_RAM.mif - type: string 
 	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
@@ -1409,13 +1405,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr__parameterized
 	Parameter C_REGCEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
 	Parameter C_USE_BYTE_WEA_i bound to: 0 - type: integer 
-	Parameter C_WE_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_WE_WIDTH_A bound to: 4 - type: integer 
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 64 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_RATIO_WA bound to: 1 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 64 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_RATIO_RA bound to: 1 - type: integer 
-	Parameter C_ADDR_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_ADDR_WIDTH_A bound to: 9 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RSTB_WIDTH bound to: 1 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
@@ -1428,9 +1424,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr__parameterized
 	Parameter C_WE_WIDTH_B bound to: 8 - type: integer 
 	Parameter C_WRITE_MODE_B bound to: READ_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 64 - type: integer 
-	Parameter C_RATIO_WB bound to: 1 - type: integer 
+	Parameter C_RATIO_WB bound to: 2 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 64 - type: integer 
-	Parameter C_RATIO_RB bound to: 1 - type: integer 
+	Parameter C_RATIO_RB bound to: 2 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 8 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1447,7 +1443,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_generic_cstr__parameterized
 	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
 	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
-	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
+	Parameter DOUBLING_RESOURCE_FIX bound to: 2 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:182845]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_FAMILY bound to: virtex6 - type: string 
@@ -1458,13 +1454,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0'
 	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
-	Parameter C_USER_WIDTH bound to: 64 - type: integer 
-	Parameter C_USER_DEPTH bound to: 256 - type: integer 
+	Parameter C_USER_WIDTH bound to: 32 - type: integer 
+	Parameter C_USER_DEPTH bound to: 512 - type: integer 
 	Parameter C_START_WIDTH bound to: 0 - type: integer 
 	Parameter C_START_DEPTH bound to: 0 - type: integer 
-	Parameter C_PRIM_WIDTH bound to: 72 - type: integer 
-	Parameter C_PRIM_DEPTH bound to: 512 - type: integer 
-	Parameter C_USED_WIDTH bound to: 64 - type: integer 
+	Parameter C_PRIM_WIDTH bound to: 36 - type: integer 
+	Parameter C_PRIM_DEPTH bound to: 1024 - type: integer 
+	Parameter C_USED_WIDTH bound to: 32 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: Output_buffer_Block_RAM.mif - type: string 
 	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
@@ -1473,13 +1469,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0'
 	Parameter C_HAS_RSTA bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
 	Parameter C_RSTRAM_A bound to: 0 - type: integer 
-	Parameter C_INITA_VAL bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_INITA_VAL bound to: 0 - type: integer 
 	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
 	Parameter C_RATIO_WA bound to: 1 - type: integer 
 	Parameter C_RATIO_RA bound to: 1 - type: integer 
-	Parameter C_ADDR_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_ADDR_WIDTH_A bound to: 9 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -1487,8 +1483,8 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0'
 	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
 	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_B bound to: READ_FIRST - type: string 
-	Parameter C_RATIO_WB bound to: 1 - type: integer 
-	Parameter C_RATIO_RB bound to: 1 - type: integer 
+	Parameter C_RATIO_WB bound to: 2 - type: integer 
+	Parameter C_RATIO_RB bound to: 2 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 8 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1502,22 +1498,22 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_width__parameterized0'
 	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
 	Parameter C_COMMON_CLK bound to: 1 - type: integer 
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
-	Parameter C_MEM_ADDR_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_MEM_ADDR_WIDTH_A bound to: 9 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 8 - type: integer 
-	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
+	Parameter DOUBLING_RESOURCE_FIX bound to: 2 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__parameterized0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:96206]
 	Parameter C_SIM_DEVICE bound to: 7SERIES - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
 	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
-	Parameter C_USER_WIDTH bound to: 64 - type: integer 
-	Parameter C_USER_DEPTH bound to: 256 - type: integer 
+	Parameter C_USER_WIDTH bound to: 32 - type: integer 
+	Parameter C_USER_DEPTH bound to: 512 - type: integer 
 	Parameter C_START_WIDTH bound to: 0 - type: integer 
 	Parameter C_START_DEPTH bound to: 0 - type: integer 
-	Parameter C_PRIM_WIDTH bound to: 72 - type: integer 
-	Parameter C_PRIM_DEPTH bound to: 512 - type: integer 
-	Parameter C_USED_WIDTH bound to: 64 - type: integer 
+	Parameter C_PRIM_WIDTH bound to: 36 - type: integer 
+	Parameter C_PRIM_DEPTH bound to: 1024 - type: integer 
+	Parameter C_USED_WIDTH bound to: 32 - type: integer 
 	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
 	Parameter C_INIT_FILE_NAME bound to: Output_buffer_Block_RAM.mif - type: string 
 	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
@@ -1528,22 +1524,22 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_HAS_SSRA bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
 	Parameter C_RSTRAM_A bound to: 0 - type: integer 
-	Parameter C_SINITA_VAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_SINITA_VAL bound to: 36'b000000000000000000000000000000000000 
 	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 72 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 36 - type: integer 
 	Parameter C_RATIO_WA bound to: 1 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 72 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 36 - type: integer 
 	Parameter C_RATIO_RA bound to: 1 - type: integer 
-	Parameter C_ADDR_WIDTH_A bound to: 9 - type: integer 
+	Parameter C_ADDR_WIDTH_A bound to: 10 - type: integer 
 	Parameter C_HAS_SSRB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
 	Parameter C_SINITB_VAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_WRITE_MODE_B bound to: READ_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 72 - type: integer 
-	Parameter C_RATIO_WB bound to: 1 - type: integer 
+	Parameter C_RATIO_WB bound to: 2 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 72 - type: integer 
-	Parameter C_RATIO_RB bound to: 1 - type: integer 
+	Parameter C_RATIO_RB bound to: 2 - type: integer 
 	Parameter C_ADDR_WIDTH_B bound to: 9 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1557,10 +1553,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_prim_wrapper_init__paramete
 	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
 	Parameter C_COMMON_CLK bound to: 1 - type: integer 
 	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
-	Parameter C_MEM_ADDR_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_MEM_ADDR_WIDTH_A bound to: 9 - type: integer 
 	Parameter C_MEM_ADDR_WIDTH_B bound to: 8 - type: integer 
-	Parameter DOUBLING_RESOURCE_FIX bound to: 0 - type: integer 
-INFO: [Synth 8-3919] null assignment ignored [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:104873]
+	Parameter DOUBLING_RESOURCE_FIX bound to: 2 - type: integer 
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
@@ -1735,8 +1730,8 @@ INFO: [Synth 8-3919] null assignment ignored [/home/jaxc/FPGA/zybo_base_system/s
 	Parameter WRITE_MODE_A bound to: READ_FIRST - type: string 
 	Parameter WRITE_MODE_B bound to: READ_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 0 - type: integer 
-	Parameter WRITE_WIDTH_B bound to: 72 - type: integer 
-INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:104934]
+	Parameter WRITE_WIDTH_B bound to: 36 - type: integer 
+INFO: [Synth 8-113] binding component instance 'ram' to cell 'RAMB36E1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:105264]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_wrapper_init__parameterized0' (31#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:96206]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_prim_width__parameterized0' (31#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:182845]
 WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:185631]
@@ -1744,10 +1739,10 @@ WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_generic_cstr__parameterized0' (31#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:184145]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_output_block__parameterized0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:187465]
 	Parameter C_MEM_TYPE bound to: 1 - type: integer 
-	Parameter C_WRITE_WIDTH_A bound to: 64 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 64 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 64 - type: integer 
-	Parameter C_READ_WIDTH_A_CORE bound to: 64 - type: integer 
+	Parameter C_READ_WIDTH_A_CORE bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_B_CORE bound to: 64 - type: integer 
 	Parameter C_ADDRB_WIDTH bound to: 8 - type: integer 
 	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -1757,15 +1752,15 @@ INFO: [Synth 8-256] done synthesizing module 'blk_mem_output_block__parameterize
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_top__parameterized0' (31#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:192416]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_2_synth__parameterized0' (31#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:193449]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_v8_2__parameterized1' (31#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2.vhd:264]
-INFO: [Synth 8-256] done synthesizing module 'Output_buffer_Block_RAM' (32#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/synth/Output_buffer_Block_RAM.vhd:71]
-INFO: [Synth 8-3491] module 'I2S_controller' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/I2S_controller.vhd:34' bound to instance 'I2S' of component 'I2S_controller' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0_S_AXI.vhd:507]
+INFO: [Synth 8-256] done synthesizing module 'Output_buffer_Block_RAM' (32#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/synth/Output_buffer_Block_RAM.vhd:72]
+INFO: [Synth 8-3491] module 'I2S_controller' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/I2S_controller.vhd:34' bound to instance 'I2S' of component 'I2S_controller' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_Slave_axi.vhd:358]
 INFO: [Synth 8-638] synthesizing module 'I2S_controller' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/I2S_controller.vhd:46]
 INFO: [Synth 8-256] done synthesizing module 'I2S_controller' (33#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/I2S_controller.vhd:46]
-WARNING: [Synth 8-3848] Net reg_data_out in module/entity Jaxc_I2S_v1_0_S_AXI does not have driver. [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0_S_AXI.vhd:137]
-INFO: [Synth 8-256] done synthesizing module 'Jaxc_I2S_v1_0_S_AXI' (34#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0_S_AXI.vhd:98]
-INFO: [Synth 8-256] done synthesizing module 'Jaxc_I2S_v1_0' (35#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Jaxc_slave_AXI' (34#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_Slave_axi.vhd:36]
+WARNING: [Synth 8-3848] Net int_out in module/entity Jaxc_I2S_v1_0 does not have driver. [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'Jaxc_I2S_v1_0' (35#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd:59]
 INFO: [Synth 8-256] done synthesizing module 'system_Jaxc_I2S_1_0' (36#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/synth/system_Jaxc_I2S_1_0.vhd:87]
-INFO: [Synth 8-3491] module 'system_MyLED_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_MyLED_0_0/synth/system_MyLED_0_0.vhd:56' bound to instance 'MyLED_0' of component 'system_MyLED_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4361]
+INFO: [Synth 8-3491] module 'system_MyLED_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_MyLED_0_0/synth/system_MyLED_0_0.vhd:56' bound to instance 'MyLED_0' of component 'system_MyLED_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4325]
 INFO: [Synth 8-638] synthesizing module 'system_MyLED_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_MyLED_0_0/synth/system_MyLED_0_0.vhd:83]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
@@ -1784,7 +1779,7 @@ INFO: [Synth 8-226] default block is never used [/home/jaxc/FPGA/zybo_base_syste
 INFO: [Synth 8-256] done synthesizing module 'MyLED_v1_0_S_AXI' (37#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/user.org/myled_v1_0/9a59528e/hdl/MyLED_v1_0_S_AXI.vhd:89]
 INFO: [Synth 8-256] done synthesizing module 'MyLED_v1_0' (38#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/user.org/myled_v1_0/9a59528e/hdl/MyLED_v1_0.vhd:50]
 INFO: [Synth 8-256] done synthesizing module 'system_MyLED_0_0' (39#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_MyLED_0_0/synth/system_MyLED_0_0.vhd:83]
-INFO: [Synth 8-3491] module 'system_SWs_4Bits_2' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_SWs_4Bits_2/synth/system_SWs_4Bits_2.vhd:59' bound to instance 'SWs_4Bits' of component 'system_SWs_4Bits_2' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4386]
+INFO: [Synth 8-3491] module 'system_SWs_4Bits_2' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_SWs_4Bits_2/synth/system_SWs_4Bits_2.vhd:59' bound to instance 'SWs_4Bits' of component 'system_SWs_4Bits_2' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4350]
 INFO: [Synth 8-638] synthesizing module 'system_SWs_4Bits_2' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_SWs_4Bits_2/synth/system_SWs_4Bits_2.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -1803,7 +1798,7 @@ INFO: [Synth 8-638] synthesizing module 'system_SWs_4Bits_2' [/home/jaxc/FPGA/zy
 	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
 INFO: [Synth 8-3491] module 'axi_gpio' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:189' bound to instance 'U0' of component 'axi_gpio' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_SWs_4Bits_2/synth/system_SWs_4Bits_2.vhd:163]
 INFO: [Synth 8-256] done synthesizing module 'system_SWs_4Bits_2' (40#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_SWs_4Bits_2/synth/system_SWs_4Bits_2.vhd:84]
-INFO: [Synth 8-3491] module 'system_axi_protocol_converter_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/synth/system_axi_protocol_converter_0_0.v:57' bound to instance 'axi_protocol_converter_0' of component 'system_axi_protocol_converter_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4409]
+INFO: [Synth 8-3491] module 'system_axi_protocol_converter_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/synth/system_axi_protocol_converter_0_0.v:57' bound to instance 'axi_protocol_converter_0' of component 'system_axi_protocol_converter_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4373]
 INFO: [Synth 8-638] synthesizing module 'system_axi_protocol_converter_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/synth/system_axi_protocol_converter_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -2541,7 +2536,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_regist
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s' (55#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' (56#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
 INFO: [Synth 8-256] done synthesizing module 'system_axi_protocol_converter_0_0' (57#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/synth/system_axi_protocol_converter_0_0.v:57]
-INFO: [Synth 8-3491] module 'system_ground_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_ground_0/sim/system_ground_0.vhd:29' bound to instance 'ground' of component 'system_ground_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4471]
+INFO: [Synth 8-3491] module 'system_ground_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_ground_0/sim/system_ground_0.vhd:29' bound to instance 'ground' of component 'system_ground_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4435]
 INFO: [Synth 8-638] synthesizing module 'system_ground_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_ground_0/sim/system_ground_0.vhd:35]
 	Parameter CONST_VAL bound to: 1'b0 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
@@ -2551,7 +2546,7 @@ INFO: [Synth 8-638] synthesizing module 'xlconstant' [/home/jaxc/FPGA/zybo_base_
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'xlconstant' (58#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'system_ground_0' (59#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_ground_0/sim/system_ground_0.vhd:35]
-INFO: [Synth 8-3491] module 'system_mailbox_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_mailbox_0_0/synth/system_mailbox_0_0.vhd:59' bound to instance 'mailbox_0' of component 'system_mailbox_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4475]
+INFO: [Synth 8-3491] module 'system_mailbox_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_mailbox_0_0/synth/system_mailbox_0_0.vhd:59' bound to instance 'mailbox_0' of component 'system_mailbox_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4439]
 INFO: [Synth 8-638] synthesizing module 'system_mailbox_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_mailbox_0_0/synth/system_mailbox_0_0.vhd:104]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
@@ -2891,7 +2886,7 @@ INFO: [Synth 8-256] done synthesizing module 'fsl_v20' (63#1) [/home/jaxc/FPGA/z
 INFO: [Synth 8-3491] module 'fsl_v20' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_mailbox_0_0/mailbox_v2_1/hdl/vhdl/fsl_v20.vhd:96' bound to instance 'fsl_1_to_0' of component 'fsl_v20' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_mailbox_0_0/mailbox_v2_1/hdl/vhdl/mailbox.vhd:847]
 INFO: [Synth 8-256] done synthesizing module 'mailbox' (64#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_mailbox_0_0/mailbox_v2_1/hdl/vhdl/mailbox.vhd:212]
 INFO: [Synth 8-256] done synthesizing module 'system_mailbox_0_0' (65#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_mailbox_0_0/synth/system_mailbox_0_0.vhd:104]
-INFO: [Synth 8-3491] module 'system_processing_system7_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:57' bound to instance 'processing_system7_0' of component 'system_processing_system7_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4518]
+INFO: [Synth 8-3491] module 'system_processing_system7_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:57' bound to instance 'processing_system7_0' of component 'system_processing_system7_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4482]
 INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
@@ -5472,7 +5467,7 @@ INFO: [Synth 8-256] done synthesizing module 'system_m07_regslice_0' (86#1) [/ho
 INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_11WAABO' (87#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:1840]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_IK3G2O' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:2059]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_IK3G2O' (88#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:2059]
-INFO: [Synth 8-3491] module 'system_xbar_1' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_1/synth/system_xbar_1.v:57' bound to instance 'xbar' of component 'system_xbar_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3307]
+INFO: [Synth 8-3491] module 'system_xbar_1' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_1/synth/system_xbar_1.v:57' bound to instance 'xbar' of component 'system_xbar_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3271]
 INFO: [Synth 8-638] synthesizing module 'system_xbar_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_1/synth/system_xbar_1.v:57]
 INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_axi_crossbar' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_crossbar_v2_1/9368eebf/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v:54]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -5484,7 +5479,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_axi_crossbar' [/home/
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
 	Parameter C_M_AXI_BASE_ADDR bound to: 512'b00000000000000000000000000000000010000111000000100000000000000000000000000000000000000000000000001000011100000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000010000111100000100000000000000000000000000000000000000000000000001000011110000000000000000000000000000000000000000000000000000000100000100100010000000000000000000000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000011110000110000000000000000 
-	Parameter C_M_AXI_ADDR_WIDTH bound to: 256'b0000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 256'b0000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000001100000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
 	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
 	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -5533,7 +5528,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_crossbar_sasd' [/home
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_M_AXI_BASE_ADDR bound to: 512'b00000000000000000000000000000000010000111000000100000000000000000000000000000000000000000000000001000011100000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000010000111100000100000000000000000000000000000000000000000000000001000011110000000000000000000000000000000000000000000000000000000100000100100010000000000000000000000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000011110000110000000000000000 
-	Parameter C_M_AXI_HIGH_ADDR bound to: 512'b00000000000000000000000000000000010000111000000111111111111111110000000000000000000000000000000001000011100000001111111111111111000000000000000000000000000000000110000000000000111111111111111100000000000000000000000000000000010000111100000111111111111111110000000000000000000000000000000001000011110000001111111111111111000000000000000000000000000000000100000100100010111111111111111100000000000000000000000000000000010000010010000011111111111111110000000000000000000000000000000001000011110000111111111111111111 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 512'b00000000000000000000000000000000010000111000000111111111111111110000000000000000000000000000000001000011100000001111111111111111000000000000000000000000000000000110000000000000111111111111111100000000000000000000000000000000010000111100000111111111111111110000000000000000000000000000000001000011110000000000111111111111000000000000000000000000000000000100000100100010111111111111111100000000000000000000000000000000010000010010000011111111111111110000000000000000000000000000000001000011110000111111111111111111 
 	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -5595,7 +5590,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_addr_decoder' [/home/
 	Parameter C_TARGET_HOT bound to: 1 - type: integer 
 	Parameter C_REGION_ENC bound to: 1 - type: integer 
 	Parameter C_BASE_ADDR bound to: 512'b00000000000000000000000000000000010000111000000100000000000000000000000000000000000000000000000001000011100000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000010000111100000100000000000000000000000000000000000000000000000001000011110000000000000000000000000000000000000000000000000000000100000100100010000000000000000000000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000011110000110000000000000000 
-	Parameter C_HIGH_ADDR bound to: 512'b00000000000000000000000000000000010000111000000111111111111111110000000000000000000000000000000001000011100000001111111111111111000000000000000000000000000000000110000000000000111111111111111100000000000000000000000000000000010000111100000111111111111111110000000000000000000000000000000001000011110000001111111111111111000000000000000000000000000000000100000100100010111111111111111100000000000000000000000000000000010000010010000011111111111111110000000000000000000000000000000001000011110000111111111111111111 
+	Parameter C_HIGH_ADDR bound to: 512'b00000000000000000000000000000000010000111000000111111111111111110000000000000000000000000000000001000011100000001111111111111111000000000000000000000000000000000110000000000000111111111111111100000000000000000000000000000000010000111100000111111111111111110000000000000000000000000000000001000011110000000000111111111111000000000000000000000000000000000100000100100010111111111111111100000000000000000000000000000000010000010010000011111111111111110000000000000000000000000000000001000011110000111111111111111111 
 	Parameter C_TARGET_QUAL bound to: 9'b011111111 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
@@ -5728,7 +5723,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_crossbar_sasd' (
 INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_axi_crossbar' (97#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_crossbar_v2_1/9368eebf/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v:54]
 INFO: [Synth 8-256] done synthesizing module 'system_xbar_1' (98#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_1/synth/system_xbar_1.v:57]
 INFO: [Synth 8-256] done synthesizing module 'system_processing_system7_0_axi_periph_2' (99#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:2315]
-INFO: [Synth 8-3491] module 'system_xadc_wiz_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.vhd:54' bound to instance 'xadc_wiz_0' of component 'system_xadc_wiz_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4797]
+INFO: [Synth 8-3491] module 'system_xadc_wiz_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.vhd:54' bound to instance 'xadc_wiz_0' of component 'system_xadc_wiz_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4761]
 INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.vhd:102]
 	Parameter C_INSTANCE bound to: system_xadc_wiz_0_0_axi_xadc - type: string 
 	Parameter C_FAMILY bound to: virtex7 - type: string 
@@ -6123,7 +6118,7 @@ INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_interrupt_control' 
 INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_interrupt_control' (106#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_interrupt_control.vhd:240]
 INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_axi_xadc' (107#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0_axi_xadc.vhd:237]
 INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0' (108#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.vhd:102]
-INFO: [Synth 8-3491] module 'system_xlconcat_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.vhd:59' bound to instance 'xlconcat_0' of component 'system_xlconcat_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4834]
+INFO: [Synth 8-3491] module 'system_xlconcat_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.vhd:59' bound to instance 'xlconcat_0' of component 'system_xlconcat_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4798]
 INFO: [Synth 8-638] synthesizing module 'system_xlconcat_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.vhd:67]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
 	Parameter IN1_WIDTH bound to: 1 - type: integer 
@@ -6197,7 +6192,7 @@ INFO: [Synth 8-638] synthesizing module 'xlconcat' [/home/jaxc/FPGA/zybo_base_sy
 	Parameter dout_width bound to: 2 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'xlconcat' (109#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/work/xlconcat.vhd:100]
 INFO: [Synth 8-256] done synthesizing module 'system_xlconcat_0_0' (110#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.vhd:67]
-INFO: [Synth 8-3491] module 'system_xlconcat_0_1' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_1/synth/system_xlconcat_0_1.vhd:59' bound to instance 'xlconcat_1' of component 'system_xlconcat_0_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4840]
+INFO: [Synth 8-3491] module 'system_xlconcat_0_1' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_1/synth/system_xlconcat_0_1.vhd:59' bound to instance 'xlconcat_1' of component 'system_xlconcat_0_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:4804]
 INFO: [Synth 8-638] synthesizing module 'system_xlconcat_0_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_1/synth/system_xlconcat_0_1.vhd:69]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
 	Parameter IN1_WIDTH bound to: 1 - type: integer 
@@ -6271,10 +6266,10 @@ INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized1' [/home/jaxc/F
 	Parameter dout_width bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized1' (110#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/work/xlconcat.vhd:100]
 INFO: [Synth 8-256] done synthesizing module 'system_xlconcat_0_1' (111#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_1/synth/system_xlconcat_0_1.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'system' (112#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3533]
+INFO: [Synth 8-256] done synthesizing module 'system' (112#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3497]
 INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (113#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:51]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:03:12 ; elapsed = 00:03:15 . Memory (MB): peak = 1247.363 ; gain = 441.613 ; free physical = 297 ; free virtual = 3981
+Finished RTL Elaboration : Time (s): cpu = 00:03:07 ; elapsed = 00:03:07 . Memory (MB): peak = 1246.367 ; gain = 440.613 ; free physical = 281 ; free virtual = 5804
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -6291,10 +6286,6 @@ INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[35] to constant 0 [
 INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[26] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
 INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[17] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
 INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[8] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[71] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[62] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[53] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
-INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[44] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
 INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[35] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
 INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[26] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
 INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINA[17] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
@@ -6308,7 +6299,7 @@ INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[26] to constant 0 [
 INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[17] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
 INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[8] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:13 ; elapsed = 00:03:16 . Memory (MB): peak = 1247.363 ; gain = 441.613 ; free physical = 297 ; free virtual = 3981
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:08 ; elapsed = 00:03:08 . Memory (MB): peak = 1246.367 ; gain = 440.613 ; free physical = 280 ; free virtual = 5803
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -6351,16 +6342,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1438.371 ; gain = 0.000 ; free physical = 184 ; free virtual = 3905
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1437.375 ; gain = 0.000 ; free physical = 131 ; free virtual = 5655
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:03:43 ; elapsed = 00:03:46 . Memory (MB): peak = 1438.375 ; gain = 632.625 ; free physical = 179 ; free virtual = 3903
+Finished Constraint Validation : Time (s): cpu = 00:03:37 ; elapsed = 00:03:37 . Memory (MB): peak = 1437.379 ; gain = 631.625 ; free physical = 130 ; free virtual = 5654
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:03:43 ; elapsed = 00:03:46 . Memory (MB): peak = 1438.375 ; gain = 632.625 ; free physical = 179 ; free virtual = 3903
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:37 ; elapsed = 00:03:37 . Memory (MB): peak = 1437.379 ; gain = 631.625 ; free physical = 130 ; free virtual = 5654
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -6380,7 +6371,7 @@ Applied set_property DONT_TOUCH = true for system_i/CLK_test_0. (constraint file
 Applied set_property DONT_TOUCH = true for system_i/FIFO_top_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/FIFO_top_0/U0/FIFO. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/Jaxc_I2S_1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for system_i/Jaxc_I2S_1/U0/Jaxc_I2S_v1_0_S_AXI_inst/RAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/Jaxc_I2S_1/U0/slave/RAM. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/MyLED_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/SWs_4Bits. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/axi_protocol_converter_0. (constraint file  auto generated constraint, line ).
@@ -6402,7 +6393,7 @@ Applied set_property DONT_TOUCH = true for system_i/xadc_wiz_0. (constraint file
 Applied set_property DONT_TOUCH = true for system_i/xlconcat_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/xlconcat_1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:43 ; elapsed = 00:03:47 . Memory (MB): peak = 1438.375 ; gain = 632.625 ; free physical = 179 ; free virtual = 3902
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:37 ; elapsed = 00:03:38 . Memory (MB): peak = 1437.379 ; gain = 631.625 ; free physical = 130 ; free virtual = 5654
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -6412,6 +6403,8 @@ INFO: [Synth 8-5546] ROM "CLK_out_int" won't be mapped to RAM because it is too 
 INFO: [Synth 8-5545] ROM "LED_out" won't be mapped to RAM because address size (22) is larger than maximum supported(18)
 INFO: [Synth 8-5546] ROM "LED_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "bready_timeout_c" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'S_AXI_out_reg[S_AXI_RVALID]' into 'S_AXI_out_reg[S_AXI_ARREADY]' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_Slave_axi.vhd:207]
+INFO: [Synth 8-802] inferred FSM for state register 'crnt_reg[write_state]' in module 'Jaxc_slave_AXI'
 INFO: [Synth 8-5546] ROM "full_i" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "last_word" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -6454,8 +6447,17 @@ INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because ad
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                     Old Encoding 
+---------------------------------------------------------------------------------------------------
+           write_address |                             0001 |                               00
+              write_data |                             0010 |                               01
+               write_ack |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'crnt_reg[write_state]' using encoding 'one-hot' in module 'Jaxc_slave_AXI'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:50 ; elapsed = 00:03:53 . Memory (MB): peak = 1438.375 ; gain = 632.625 ; free physical = 123 ; free virtual = 3898
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:44 ; elapsed = 00:03:44 . Memory (MB): peak = 1437.379 ; gain = 631.625 ; free physical = 131 ; free virtual = 5655
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6485,14 +6487,14 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 17    
 +---Registers : 
 	               66 Bit    Registers := 4     
-	               64 Bit    Registers := 4     
+	               64 Bit    Registers := 3     
 	               62 Bit    Registers := 2     
 	               47 Bit    Registers := 2     
 	               37 Bit    Registers := 2     
 	               36 Bit    Registers := 9     
 	               35 Bit    Registers := 10    
 	               34 Bit    Registers := 7     
-	               32 Bit    Registers := 16    
+	               32 Bit    Registers := 17    
 	               22 Bit    Registers := 1     
 	               17 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
@@ -6501,14 +6503,14 @@ Detailed RTL Component Info :
 	               12 Bit    Registers := 13    
 	               11 Bit    Registers := 3     
 	               10 Bit    Registers := 14    
-	                9 Bit    Registers := 6     
-	                8 Bit    Registers := 5     
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 4     
 	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 6     
 	                4 Bit    Registers := 17    
 	                3 Bit    Registers := 7     
 	                2 Bit    Registers := 78    
-	                1 Bit    Registers := 363   
+	                1 Bit    Registers := 368   
 +---RAMs : 
 	              32K Bit         RAMs := 2     
 +---Muxes : 
@@ -6529,6 +6531,7 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 5     
 	   2 Input      4 Bit        Muxes := 25    
+	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 4     
 	   7 Input      2 Bit        Muxes := 5     
 	   2 Input      2 Bit        Muxes := 26    
@@ -6536,8 +6539,8 @@ Detailed RTL Component Info :
 	   6 Input      2 Bit        Muxes := 2     
 	   4 Input      2 Bit        Muxes := 2     
 	   5 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 351   
-	   4 Input      1 Bit        Muxes := 23    
+	   2 Input      1 Bit        Muxes := 348   
+	   4 Input      1 Bit        Muxes := 27    
 	   3 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -6674,18 +6677,21 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 5     
-Module Jaxc_I2S_v1_0_S_AXI 
+Module Jaxc_slave_AXI 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
-	               64 Bit    Registers := 2     
-	               32 Bit    Registers := 1     
-	                8 Bit    Registers := 3     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 7     
+	                1 Bit    Registers := 12    
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
 Module MyLED_v1_0_S_AXI 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -7527,7 +7533,7 @@ BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:03:50 ; elapsed = 00:03:54 . Memory (MB): peak = 1438.375 ; gain = 632.625 ; free physical = 114 ; free virtual = 3893
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:03:44 ; elapsed = 00:03:44 . Memory (MB): peak = 1437.379 ; gain = 631.625 ; free physical = 131 ; free virtual = 5655
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -7548,9 +7554,9 @@ INFO: [Synth 8-4471] merging register 'INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I/DO_I
 INFO: [Synth 8-4471] merging register 'INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I/DO_IRPT_INPUT[16].GEN_POS_EDGE_DETECT.irpt_dly2_reg' into 'INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I/DO_IRPT_INPUT[14].GEN_POS_EDGE_DETECT.irpt_dly2_reg' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_interrupt_control.vhd:639]
 INFO: [Synth 8-4471] merging register 'bus2ip_reset_active_high_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0_axi_xadc.vhd:639]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:03:53 ; elapsed = 00:03:56 . Memory (MB): peak = 1438.375 ; gain = 632.625 ; free physical = 114 ; free virtual = 3891
+Finished Cross Boundary Optimization : Time (s): cpu = 00:03:46 ; elapsed = 00:03:46 . Memory (MB): peak = 1437.379 ; gain = 631.625 ; free physical = 131 ; free virtual = 5655
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:03:53 ; elapsed = 00:03:56 . Memory (MB): peak = 1438.375 ; gain = 632.625 ; free physical = 114 ; free virtual = 3891
+Finished Parallel Reinference  : Time (s): cpu = 00:03:46 ; elapsed = 00:03:46 . Memory (MB): peak = 1437.379 ; gain = 631.625 ; free physical = 131 ; free virtual = 5655
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -7579,16 +7585,16 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:04:01 ; elapsed = 00:04:05 . Memory (MB): peak = 1438.379 ; gain = 632.629 ; free physical = 130 ; free virtual = 3852
+Finished Area Optimization : Time (s): cpu = 00:03:53 ; elapsed = 00:03:54 . Memory (MB): peak = 1437.383 ; gain = 631.629 ; free physical = 131 ; free virtual = 5655
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:04:01 ; elapsed = 00:04:05 . Memory (MB): peak = 1438.379 ; gain = 632.629 ; free physical = 130 ; free virtual = 3852
+Finished Parallel Area Optimization  : Time (s): cpu = 00:03:53 ; elapsed = 00:03:54 . Memory (MB): peak = 1437.383 ; gain = 631.629 ; free physical = 131 ; free virtual = 5655
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:04:01 ; elapsed = 00:04:05 . Memory (MB): peak = 1438.379 ; gain = 632.629 ; free physical = 130 ; free virtual = 3852
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:03:53 ; elapsed = 00:03:54 . Memory (MB): peak = 1437.383 ; gain = 631.629 ; free physical = 131 ; free virtual = 5655
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -7597,10 +7603,10 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:13 ; elapsed = 00:04:17 . Memory (MB): peak = 1553.371 ; gain = 747.621 ; free physical = 128 ; free virtual = 3677
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:04 ; elapsed = 00:04:05 . Memory (MB): peak = 1553.375 ; gain = 747.621 ; free physical = 195 ; free virtual = 5537
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:15 ; elapsed = 00:04:19 . Memory (MB): peak = 1570.379 ; gain = 764.629 ; free physical = 139 ; free virtual = 3669
+Finished Timing Optimization : Time (s): cpu = 00:04:06 ; elapsed = 00:04:07 . Memory (MB): peak = 1570.383 ; gain = 764.629 ; free physical = 178 ; free virtual = 5519
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7684,38 +7690,38 @@ INFO: [Synth 8-3332] Sequential element (\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_a
 INFO: [Synth 8-3332] Sequential element (\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[4] ) is unused and will be removed from module axi_gpio__2.
 INFO: [Synth 8-3332] Sequential element (\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] ) is unused and will be removed from module axi_gpio__2.
 INFO: [Synth 8-3332] Sequential element (\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] ) is unused and will be removed from module axi_gpio__2.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_bresp_reg[1] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_bresp_reg[0] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[31] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[30] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[29] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[28] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[27] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[26] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[25] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[24] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[23] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[22] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[21] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[20] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[19] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[18] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[17] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[16] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[15] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[14] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[13] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[12] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[11] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[10] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[9] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[8] ) is unused and will be removed from module Jaxc_I2S_v1_0.
-WARNING: [Synth 8-3332] Sequential element (\Jaxc_I2S_v1_0_S_AXI_inst/axi_rdata_reg[7] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_BRESP][1] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_BRESP][0] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_ARREADY] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][31] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][30] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][29] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][28] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][27] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][26] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][25] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][24] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][23] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][22] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][21] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][20] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][19] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][18] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][17] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][16] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][15] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][14] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][13] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][12] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][11] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][10] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][9] ) is unused and will be removed from module Jaxc_I2S_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][8] ) is unused and will be removed from module Jaxc_I2S_v1_0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-4480] The timing for the instance \fsl_0_to_1/Using_FIFO.Sync_FIFO_Gen.Sync_FIFO_I1/Sync_BRAM_FIFO.Sync_BRAM_I1/ram_mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance \fsl_1_to_0/Using_FIFO.Sync_FIFO_Gen.Sync_FIFO_I1/Sync_BRAM_FIFO.Sync_BRAM_I1/ram_mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:22 ; elapsed = 00:04:26 . Memory (MB): peak = 1601.402 ; gain = 795.652 ; free physical = 117 ; free virtual = 3639
+Finished Technology Mapping : Time (s): cpu = 00:04:12 ; elapsed = 00:04:13 . Memory (MB): peak = 1600.414 ; gain = 794.660 ; free physical = 148 ; free virtual = 5489
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7755,7 +7761,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:24 ; elapsed = 00:04:28 . Memory (MB): peak = 1601.402 ; gain = 795.652 ; free physical = 116 ; free virtual = 3638
+Finished IO Insertion : Time (s): cpu = 00:04:15 ; elapsed = 00:04:15 . Memory (MB): peak = 1600.414 ; gain = 794.660 ; free physical = 147 ; free virtual = 5488
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -7768,7 +7774,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:24 ; elapsed = 00:04:28 . Memory (MB): peak = 1601.402 ; gain = 795.652 ; free physical = 116 ; free virtual = 3638
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:15 ; elapsed = 00:04:15 . Memory (MB): peak = 1600.414 ; gain = 794.660 ; free physical = 147 ; free virtual = 5488
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7780,13 +7786,13 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:25 ; elapsed = 00:04:29 . Memory (MB): peak = 1601.402 ; gain = 795.652 ; free physical = 116 ; free virtual = 3638
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:16 ; elapsed = 00:04:16 . Memory (MB): peak = 1600.414 ; gain = 794.660 ; free physical = 147 ; free virtual = 5488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Renaming Generated Ports : Time (s): cpu = 00:04:25 ; elapsed = 00:04:29 . Memory (MB): peak = 1601.402 ; gain = 795.652 ; free physical = 116 ; free virtual = 3638
+Start Renaming Generated Ports : Time (s): cpu = 00:04:16 ; elapsed = 00:04:16 . Memory (MB): peak = 1600.414 ; gain = 794.660 ; free physical = 147 ; free virtual = 5488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:25 ; elapsed = 00:04:29 . Memory (MB): peak = 1601.402 ; gain = 795.652 ; free physical = 116 ; free virtual = 3638
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:16 ; elapsed = 00:04:16 . Memory (MB): peak = 1600.414 ; gain = 794.660 ; free physical = 147 ; free virtual = 5488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7826,11 +7832,11 @@ Report Cell Usage:
 |3     |CARRY4     |    36|
 |4     |GND        |     1|
 |5     |LUT1       |   496|
-|6     |LUT2       |   413|
-|7     |LUT3       |   479|
-|8     |LUT4       |   331|
-|9     |LUT5       |   429|
-|10    |LUT6       |   748|
+|6     |LUT2       |   422|
+|7     |LUT3       |   465|
+|8     |LUT4       |   339|
+|9     |LUT5       |   430|
+|10    |LUT6       |   750|
 |11    |MUXCY_L    |    22|
 |12    |PS7        |     1|
 |13    |RAMB36E1   |     1|
@@ -7842,7 +7848,7 @@ Report Cell Usage:
 |19    |XORCY      |    24|
 |20    |FDCE       |   266|
 |21    |FDR        |    32|
-|22    |FDRE       |  2969|
+|22    |FDRE       |  2954|
 |23    |FDSE       |   101|
 |24    |IBUF       |     8|
 |25    |IOBUF      |     2|
@@ -7853,8 +7859,8 @@ Report Instance Areas:
 +------+--------------------------------------------------+-------------------------------------------------------------+------+
 |      |Instance                                          |Module                                                       |Cells |
 +------+--------------------------------------------------+-------------------------------------------------------------+------+
-|1     |top                                               |                                                             |  6578|
-|2     |  system_i                                        |system                                                       |  6555|
+|1     |top                                               |                                                             |  6569|
+|2     |  system_i                                        |system                                                       |  6546|
 |3     |    BTNs_4Bits                                    |system_BTNs_4Bits_0                                          |   108|
 |4     |      U0                                          |axi_gpio__2                                                  |   108|
 |5     |        AXI_LITE_IPIF_I                           |axi_lite_ipif_7                                              |    64|
@@ -7881,9 +7887,9 @@ Report Instance Areas:
 |26    |                axi_read_fsm                      |blk_mem_axi_read_fsm                                         |    23|
 |27    |              \gaxibmg.axi_wr_fsm                 |blk_mem_axi_write_wrapper                                    |    30|
 |28    |                axi_wr_fsm                        |blk_mem_axi_write_fsm                                        |    13|
-|29    |    Jaxc_I2S_1                                    |system_Jaxc_I2S_1_0                                          |   511|
-|30    |      U0                                          |Jaxc_I2S_v1_0                                                |   511|
-|31    |        Jaxc_I2S_v1_0_S_AXI_inst                  |Jaxc_I2S_v1_0_S_AXI                                          |   511|
+|29    |    Jaxc_I2S_1                                    |system_Jaxc_I2S_1_0                                          |   501|
+|30    |      U0                                          |Jaxc_I2S_v1_0                                                |   501|
+|31    |        slave                                     |Jaxc_slave_AXI                                               |   501|
 |32    |          RAM                                     |Output_buffer_Block_RAM                                      |     1|
 |33    |            U0                                    |blk_mem_gen_v8_2__parameterized1                             |     1|
 |34    |              inst_blk_mem_gen                    |blk_mem_gen_v8_2_synth__parameterized0                       |     1|
@@ -7893,7 +7899,7 @@ Report Instance Areas:
 |38    |                      \prim_init.ram              |blk_mem_gen_prim_wrapper_init__parameterized0                |     1|
 |39    |          I2S                                     |I2S_controller                                               |   139|
 |40    |          new_input_sample                        |cross_domain_bus                                             |   194|
-|41    |          req_sample                              |cross_domain_bit                                             |     6|
+|41    |          req_sample                              |cross_domain_bit                                             |     5|
 |42    |    MyLED_0                                       |system_MyLED_0_0                                             |   597|
 |43    |      U0                                          |MyLED_v1_0                                                   |   597|
 |44    |        MyLED_v1_0_S_AXI_inst                     |MyLED_v1_0_S_AXI                                             |   597|
@@ -7947,14 +7953,14 @@ Report Instance Areas:
 |92    |            \Sync_BRAM_FIFO.Sync_BRAM_I1          |Sync_BRAM                                                    |    45|
 |93    |    processing_system7_0                          |system_processing_system7_0_0                                |   486|
 |94    |      inst                                        |processing_system7_v5_5_processing_system7                   |   486|
-|95    |    processing_system7_0_axi_periph               |system_processing_system7_0_axi_periph_2                     |  1933|
-|96    |      xbar                                        |system_xbar_1                                                |   395|
-|97    |        inst                                      |axi_crossbar_v2_1_axi_crossbar                               |   395|
-|98    |          \gen_sasd.crossbar_sasd_0               |axi_crossbar_v2_1_crossbar_sasd                              |   395|
-|99    |            addr_arbiter_inst                     |axi_crossbar_v2_1_addr_arbiter_sasd                          |   192|
-|100   |            \gen_decerr.decerr_slave_inst         |axi_crossbar_v2_1_decerr_slave                               |    12|
-|101   |            splitter_ar                           |axi_crossbar_v2_1_splitter__parameterized0                   |    13|
-|102   |            splitter_aw                           |axi_crossbar_v2_1_splitter                                   |    12|
+|95    |    processing_system7_0_axi_periph               |system_processing_system7_0_axi_periph_2                     |  1934|
+|96    |      xbar                                        |system_xbar_1                                                |   396|
+|97    |        inst                                      |axi_crossbar_v2_1_axi_crossbar                               |   396|
+|98    |          \gen_sasd.crossbar_sasd_0               |axi_crossbar_v2_1_crossbar_sasd                              |   396|
+|99    |            addr_arbiter_inst                     |axi_crossbar_v2_1_addr_arbiter_sasd                          |   201|
+|100   |            \gen_decerr.decerr_slave_inst         |axi_crossbar_v2_1_decerr_slave                               |    11|
+|101   |            splitter_ar                           |axi_crossbar_v2_1_splitter__parameterized0                   |     6|
+|102   |            splitter_aw                           |axi_crossbar_v2_1_splitter                                   |    11|
 |103   |      m00_couplers                                |m00_couplers_imp_WKXF3L                                      |   179|
 |104   |        m00_regslice                              |system_m00_regslice_0                                        |   179|
 |105   |          inst                                    |axi_register_slice_v2_1_axi_register_slice__parameterized1   |   179|
@@ -8032,11 +8038,11 @@ Report Instance Areas:
 |177   |    xlconcat_1                                    |system_xlconcat_0_1                                          |     0|
 +------+--------------------------------------------------+-------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:25 ; elapsed = 00:04:29 . Memory (MB): peak = 1601.402 ; gain = 795.652 ; free physical = 116 ; free virtual = 3638
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:16 ; elapsed = 00:04:17 . Memory (MB): peak = 1600.414 ; gain = 794.660 ; free physical = 147 ; free virtual = 5488
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 81 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:03:40 ; elapsed = 00:03:43 . Memory (MB): peak = 1601.402 ; gain = 451.520 ; free physical = 116 ; free virtual = 3638
-Synthesis Optimization Complete : Time (s): cpu = 00:04:26 ; elapsed = 00:04:30 . Memory (MB): peak = 1601.402 ; gain = 795.652 ; free physical = 116 ; free virtual = 3638
+Synthesis finished with 0 errors, 0 critical warnings and 73 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:33 ; elapsed = 00:03:34 . Memory (MB): peak = 1600.414 ; gain = 450.527 ; free physical = 147 ; free virtual = 5488
+Synthesis Optimization Complete : Time (s): cpu = 00:04:16 ; elapsed = 00:04:17 . Memory (MB): peak = 1600.414 ; gain = 794.660 ; free physical = 147 ; free virtual = 5488
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 129 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -8049,8 +8055,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-887 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+885 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:25 ; elapsed = 00:04:28 . Memory (MB): peak = 1601.406 ; gain = 651.535 ; free physical = 169 ; free virtual = 3633
-report_utilization: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.40 . Memory (MB): peak = 1633.422 ; gain = 0.000 ; free physical = 159 ; free virtual = 3633
-INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 15:22:43 2015...
+synth_design: Time (s): cpu = 00:04:16 ; elapsed = 00:04:16 . Memory (MB): peak = 1600.418 ; gain = 650.543 ; free physical = 146 ; free virtual = 5488
+report_utilization: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.26 . Memory (MB): peak = 1632.434 ; gain = 0.000 ; free physical = 143 ; free virtual = 5487
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 12 12:40:50 2015...
