@@ -33,7 +33,7 @@ MODULE_DESCRIPTION
 unsigned myint = 0xdeadbeef;
 char *mystr = "default";
 
-struct resource *res;
+//struct resource *res;
 unsigned long remap_size;
 unsigned long addr_size = 512;
 unsigned long *base_addr;
@@ -47,12 +47,12 @@ module_param(mystr, charp, S_IRUGO);
 
 struct I2S_driver_local {
 	int irq;
-	unsigned long mem_start;
-	unsigned long mem_end;
+	unsigned long start;
+	unsigned long end;
 	void __iomem *base_addr;
 };
 
-static irqreturn_t I2S_driver_irq(int irq, void *lp)
+static irqreturn_t I2S_driver_irq(int irq, void *res)
 {
 	printk("I2S_driver interrupt\n");
 	return IRQ_HANDLED;
@@ -61,7 +61,7 @@ static irqreturn_t I2S_driver_irq(int irq, void *lp)
  static int proc_I2S_driver_show(struct seq_file *p, void *v)
  {
      u32 I2S_value;
-     I2S_value = ioread32(&res->start);
+     I2S_value = ioread32(base_addr);
      seq_printf(p, "0x%x", I2S_value);
      return 0;
  }
@@ -94,14 +94,10 @@ static int proc_I2S_driver_open(struct inode* inode, struct file* file){
 static int proc_I2S_driver_read(struct inode* inode, char __user *buffer, struct file* filp){
     
 	// READ NOT CURRENTLY SUPPORTED!!!
-    if (current_word) { return 0;}
-   u32 I2S_value;
-    unsigned long crnt_addr;
-    void          *write_addr;
-
-    //crnt_addr =  ;
-    //write_addr = base_addr + 4;
+    u32 I2S_value;
     I2S_value = ioread32(base_addr);
+
+    if (current_word) { return 0;}
 
     //printk("<1> base_addr: %08lx", base_addr);
 
@@ -133,12 +129,12 @@ static int proc_I2S_driver_write(struct file *file, const char __user * buf,
 		     wmb();
 		     iowrite32(0x80000000, base_addr+i);
 		}
-		printk("%i/%i\n",i, addr_size);
+		//printk("%i/%i\n",i, addr_size);
 		for(i = i ; i < addr_size-1 ; i = i + 1){
 		     wmb();
 		     iowrite32(0x0, base_addr+i);
 		}
-    printk("%i/%i\n",i, addr_size);
+    //printk("%i/%i\n",i, addr_size);
 
 	}
 	else if (buf[0] == 't'){
@@ -152,7 +148,7 @@ static int proc_I2S_driver_write(struct file *file, const char __user * buf,
 		     wmb();
 		     iowrite32(send_value, base_addr+i);
 		}
-    printk("%i/%i",i, addr_size);
+    //printk("%i/%i",i, addr_size);
 	}
      
 
@@ -163,32 +159,50 @@ static int proc_I2S_driver_write(struct file *file, const char __user * buf,
   static const struct file_operations proc_I2S_driver_operations = {
       .open 	= proc_I2S_driver_open,
       .read 	= proc_I2S_driver_read,
-      .write 	= proc_I2S_driver_write,
+      .write 	= proc_I2S_driver_write
       //.release 	= single_driver_release
   };
 
 static int I2S_driver_probe(struct platform_device *pdev)
 {
     struct proc_dir_entry *I2S_proc_entry;
+    struct resource *res;
+    struct resource *r_irq;
+    struct device *dev = &pdev->dev;
+
+    int rc = 0;
+
+    struct I2S_driver_local *lp;
      int ret = 0;
  
      res = platform_get_resource(pdev, IORESOURCE_MEM, 0);
-     printk("<1>Start address 0x%08x, end address 0x%08x", res->start, res->end);
+     
      if (!res) {
-         dev_err(&pdev->dev, "No memory resource\n");
+         dev_err(dev, "No memory resource\n");
          return -ENODEV;
      }
  
+     lp = (struct I2S_driver_local *) kmalloc(sizeof(struct I2S_driver_local), GFP_KERNEL);
+      if (!lp) {
+        dev_err(dev, "Cound not allocate test device\n");
+        return -ENOMEM;
+      }
+
      remap_size = res->end - res->start + 1;
-     //addr_size = remap_size/4;
-     if (!request_mem_region(res->start, remap_size, pdev->name)) {
-         dev_err(&pdev->dev, "Cannot request IO\n");
+
+     lp->start = res->start;
+     lp->end = res->end;
+     printk("<1>Start address 0x%08x, end address 0x%08x", res->start, res->end);
+
+     if (!request_mem_region(lp->start, remap_size, pdev->name)) {
+         dev_err(dev, "Cannot request IO\n");
          return -ENXIO;
      }
  
      base_addr = ioremap(res->start, remap_size);
+
      if (base_addr == NULL) {
-         dev_err(&pdev->dev, "Couldn't ioremap memory at 0x%08lx\n",
+         dev_err(dev, "Couldn't ioremap memory at 0x%08lx\n",
              (unsigned long)res->start);
          ret = -ENOMEM;
          goto err_release_region;
@@ -197,16 +211,36 @@ static int I2S_driver_probe(struct platform_device *pdev)
      I2S_proc_entry = proc_create(DRIVER_NAME, 0, NULL,
                         &proc_I2S_driver_operations);
      if (I2S_proc_entry == NULL) {
-         dev_err(&pdev->dev, "Couldn't create proc entry\n");
+         dev_err(dev, "Couldn't create proc entry\n");
          ret = -ENOMEM;
          goto err_create_proc_entry;
      }
+
+
+      r_irq = platform_get_resource(pdev, IORESOURCE_IRQ, 0);
+      if (!r_irq) {
+        dev_info(dev, "no IRQ found\n");
+        dev_info(dev, "test at 0x%08x mapped to 0x%08x\n",
+          (unsigned int __force)lp->start,
+          (unsigned int __force)lp->base_addr);
+        return 0;
+      }
+      lp->irq = r_irq->start;
+      
+      rc = request_irq(lp->irq, &I2S_driver_irq, 0, DRIVER_NAME, lp);
+      if (rc) {
+        dev_err(dev, "testmodule: Could not allocate interrupt %d.\n",
+          lp->irq);
+        goto error3;
+      }
  
-     printk(KERN_INFO DRIVER_NAME " probed at VA 0x%08lx\n",
-            (unsigned long) base_addr);
+     printk(KERN_INFO DRIVER_NAME "probed at VA 0x%08lx, irq=%d\n",
+            (unsigned long) base_addr, lp->irq);
  
      return 0;
- 
+    
+    error3:
+      free_irq(lp->irq, lp);
 	  err_create_proc_entry:
 	     iounmap(base_addr);
 	  err_release_region:
@@ -219,16 +253,19 @@ static int I2S_driver_probe(struct platform_device *pdev)
  {	
  	int i = 0;
  	for(i=0;i<remap_size;i = i+4){
- 		//iowrite32(0, res->start+i);
+ 		//iowrite32(0, res->mem_start+i);
  	}
  }
 
 static int I2S_driver_remove(struct platform_device *pdev)
 {
-	I2S_driver_shutdown(pdev);
+    struct device *dev = &pdev->dev;
+    struct I2S_driver_local *lp = dev_get_drvdata(dev);
+    free_irq(lp->irq, lp);
+	  I2S_driver_shutdown(pdev);
   	remove_proc_entry(DRIVER_NAME, NULL);
   	iounmap(base_addr);
-	release_mem_region(res->start, remap_size);
+	  release_mem_region(lp->start, remap_size);
 	return 0;
 }
 

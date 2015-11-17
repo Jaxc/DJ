@@ -282,50 +282,6 @@
 
 /******************************************************************/
 
-
-/* Definitions for peripheral MAILBOX_0 IF 0 */
-#define XPAR_MAILBOX_0_IF_0_DEVICE_ID 0
-#define XPAR_MAILBOX_0_IF_0_BASEADDR 0x43800000
-#define XPAR_MAILBOX_0_IF_0_USE_FSL 0
-#define XPAR_MAILBOX_0_IF_0_SEND_FSL 0
-#define XPAR_MAILBOX_0_IF_0_RECV_FSL 0
-
-/* Definition for TestApp ID */
-#define XPAR_MAILBOX_0_TESTAPP_ID 0
-
-/* Definitions for peripheral MAILBOX_0 IF 1 */
-#define XPAR_MAILBOX_0_IF_1_DEVICE_ID 1
-#define XPAR_MAILBOX_0_IF_1_BASEADDR 0x43810000
-#define XPAR_MAILBOX_0_IF_1_USE_FSL 0
-#define XPAR_MAILBOX_0_IF_1_SEND_FSL 0
-#define XPAR_MAILBOX_0_IF_1_RECV_FSL 0
-
-/* Definitions for driver MAILBOX */
-#define XPAR_XMBOX_NUM_INSTANCES 2
-
-/******************************************************************/
-
-
-/* Canonical definitions for peripheral MAILBOX_0 IF 0 */
-#define XPAR_MBOX_0_DEVICE_ID XPAR_MAILBOX_0_IF_0_DEVICE_ID
-#define XPAR_MBOX_0_BASEADDR 0x43800000
-#define XPAR_MBOX_0_HIGHADDR 0x4380FFFF
-#define XPAR_MBOX_0_USE_FSL XPAR_MAILBOX_0_IF_0_USE_FSL
-#define XPAR_MBOX_0_SEND_FSL XPAR_MAILBOX_0_IF_0_SEND_FSL
-#define XPAR_MBOX_0_RECV_FSL XPAR_MAILBOX_0_IF_0_RECV_FSL
-
-
-/* Canonical definitions for peripheral MAILBOX_0 IF 1 */
-#define XPAR_MBOX_1_DEVICE_ID XPAR_MAILBOX_0_IF_1_DEVICE_ID
-#define XPAR_MBOX_1_BASEADDR 0x43810000
-#define XPAR_MBOX_1_HIGHADDR 0x4381FFFF
-#define XPAR_MBOX_1_USE_FSL XPAR_MAILBOX_0_IF_1_USE_FSL
-#define XPAR_MBOX_1_SEND_FSL XPAR_MAILBOX_0_IF_1_SEND_FSL
-#define XPAR_MBOX_1_RECV_FSL XPAR_MAILBOX_0_IF_1_RECV_FSL
-
-
-/******************************************************************/
-
 /* Definitions for driver QSPIPS */
 #define XPAR_XQSPIPS_NUM_INSTANCES 1
 
@@ -353,7 +309,6 @@
 /***Definitions for Core_nIRQ/nFIQ interrupts ****/
 /* Definitions for Fabric interrupts connected to ps7_scugic_0 */
 #define XPAR_FABRIC_JAXC_I2S_1_INT_OUT_INTR 61
-#define XPAR_FABRIC_XADC_WIZ_0_USER_TEMP_ALARM_OUT_INTR 62
 
 /******************************************************************/
 

@@ -161,17 +161,13 @@ proc create_root_design { parentCell } {
   set ground [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 ground ]
   set_property -dict [ list CONFIG.CONST_VAL {0}  ] $ground
 
-  # Create instance: mailbox_0, and set properties
-  set mailbox_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mailbox:2.1 mailbox_0 ]
-  set_property -dict [ list CONFIG.C_IMPL_STYLE {1} CONFIG.C_MAILBOX_DEPTH {1024}  ] $mailbox_0
-
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
   set_property -dict [ list CONFIG.PCW_ENET0_PERIPHERAL_ENABLE {1} CONFIG.PCW_EN_CLK1_PORT {1} CONFIG.PCW_EN_CLK2_PORT {1} CONFIG.PCW_EN_RST1_PORT {1} CONFIG.PCW_FCLK1_PERIPHERAL_CLKSRC {DDR PLL} CONFIG.PCW_FCLK2_PERIPHERAL_CLKSRC {ARM PLL} CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {150} CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {12.288} CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1} CONFIG.PCW_IMPORT_BOARD_PRESET {./lib/xml/ZYBO_zynq_def.xml} CONFIG.PCW_IRQ_F2P_INTR {1} CONFIG.PCW_MIO_47_PULLUP {enabled} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_SD0_GRP_WP_ENABLE {1} CONFIG.PCW_USE_DMA0 {0} CONFIG.PCW_USE_DMA1 {0} CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_USE_S_AXI_HP0 {0} CONFIG.PCW_USE_S_AXI_HP1 {0}  ] $processing_system7_0
 
   # Create instance: processing_system7_0_axi_periph, and set properties
   set processing_system7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 processing_system7_0_axi_periph ]
-  set_property -dict [ list CONFIG.ENABLE_ADVANCED_OPTIONS {0} CONFIG.M00_HAS_REGSLICE {4} CONFIG.M01_HAS_REGSLICE {4} CONFIG.M02_HAS_REGSLICE {4} CONFIG.M03_HAS_REGSLICE {4} CONFIG.M04_HAS_REGSLICE {4} CONFIG.M05_HAS_REGSLICE {4} CONFIG.M06_HAS_REGSLICE {4} CONFIG.M07_HAS_REGSLICE {4} CONFIG.NUM_MI {8} CONFIG.STRATEGY {1}  ] $processing_system7_0_axi_periph
+  set_property -dict [ list CONFIG.ENABLE_ADVANCED_OPTIONS {0} CONFIG.M00_HAS_REGSLICE {4} CONFIG.M01_HAS_REGSLICE {4} CONFIG.M02_HAS_REGSLICE {4} CONFIG.M03_HAS_REGSLICE {4} CONFIG.M04_HAS_REGSLICE {4} CONFIG.M05_HAS_REGSLICE {4} CONFIG.M06_HAS_REGSLICE {4} CONFIG.M07_HAS_REGSLICE {4} CONFIG.NUM_MI {6} CONFIG.STRATEGY {1}  ] $processing_system7_0_axi_periph
 
   # Create instance: xadc_wiz_0, and set properties
   set xadc_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xadc_wiz:3.1 xadc_wiz_0 ]
@@ -179,10 +175,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: xlconcat_0, and set properties
   set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
-
-  # Create instance: xlconcat_1, and set properties
-  set xlconcat_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_1 ]
-  set_property -dict [ list CONFIG.NUM_PORTS {4}  ] $xlconcat_1
+  set_property -dict [ list CONFIG.NUM_PORTS {1}  ] $xlconcat_0
 
   # Create interface connections
   connect_bd_intf_net -intf_net BTNs_4Bits_GPIO [get_bd_intf_ports BTNs_4Bits] [get_bd_intf_pins BTNs_4Bits/GPIO]
@@ -198,22 +191,18 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M03_AXI [get_bd_intf_pins Jaxc_I2S_1/s_axi] [get_bd_intf_pins processing_system7_0_axi_periph/M03_AXI]
   connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M04_AXI [get_bd_intf_pins processing_system7_0_axi_periph/M04_AXI] [get_bd_intf_pins xadc_wiz_0/s_axi_lite]
   connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M05_AXI [get_bd_intf_pins FIFO_top_0/s_axi] [get_bd_intf_pins processing_system7_0_axi_periph/M05_AXI]
-  connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M06_AXI [get_bd_intf_pins mailbox_0/S0_AXI] [get_bd_intf_pins processing_system7_0_axi_periph/M06_AXI]
-  connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M07_AXI [get_bd_intf_pins mailbox_0/S1_AXI] [get_bd_intf_pins processing_system7_0_axi_periph/M07_AXI]
 
   # Create port connections
-  connect_bd_net -net BCLK_1 [get_bd_ports BCLK] [get_bd_pins CLK_DIV_0/CLK_out] [get_bd_pins CLK_DIV_1/CLK_in] [get_bd_pins CLK_test_0/CLK1] [get_bd_pins Jaxc_I2S_1/BCLK] [get_bd_pins xlconcat_1/In1]
-  connect_bd_net -net CLK_DIV_1_CLK_out [get_bd_ports PBLRC] [get_bd_pins CLK_DIV_1/CLK_out] [get_bd_pins CLK_test_0/CLK2] [get_bd_pins Jaxc_I2S_1/PBLRC] [get_bd_pins xlconcat_1/In2]
+  connect_bd_net -net BCLK_1 [get_bd_ports BCLK] [get_bd_pins CLK_DIV_0/CLK_out] [get_bd_pins CLK_DIV_1/CLK_in] [get_bd_pins CLK_test_0/CLK1] [get_bd_pins Jaxc_I2S_1/BCLK]
+  connect_bd_net -net CLK_DIV_1_CLK_out [get_bd_ports PBLRC] [get_bd_pins CLK_DIV_1/CLK_out] [get_bd_pins CLK_test_0/CLK2] [get_bd_pins Jaxc_I2S_1/PBLRC]
   connect_bd_net -net CLK_test_0_LED_out [get_bd_ports LED_out] [get_bd_pins CLK_test_0/LED_out]
-  connect_bd_net -net Jaxc_I2S_0_PBDAT [get_bd_ports PBDAT] [get_bd_pins Jaxc_I2S_1/PBDAT] [get_bd_pins xlconcat_1/In0]
+  connect_bd_net -net Jaxc_I2S_0_PBDAT [get_bd_ports PBDAT] [get_bd_pins Jaxc_I2S_1/PBDAT]
   connect_bd_net -net Jaxc_I2S_1_MUTE [get_bd_ports MUTE] [get_bd_pins Jaxc_I2S_1/MUTE]
   connect_bd_net -net Jaxc_I2S_1_int_out [get_bd_pins Jaxc_I2S_1/int_out] [get_bd_pins xlconcat_0/In0]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins BTNs_4Bits/s_axi_aclk] [get_bd_pins FIFO_top_0/s_aclk] [get_bd_pins Jaxc_I2S_1/s_axi_aclk] [get_bd_pins MyLED_0/s_axi_aclk] [get_bd_pins SWs_4Bits/s_axi_aclk] [get_bd_pins axi_protocol_converter_0/aclk] [get_bd_pins mailbox_0/S0_AXI_ACLK] [get_bd_pins mailbox_0/S1_AXI_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0_axi_periph/ACLK] [get_bd_pins processing_system7_0_axi_periph/M00_ACLK] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0_axi_periph/M02_ACLK] [get_bd_pins processing_system7_0_axi_periph/M03_ACLK] [get_bd_pins processing_system7_0_axi_periph/M04_ACLK] [get_bd_pins processing_system7_0_axi_periph/M05_ACLK] [get_bd_pins processing_system7_0_axi_periph/M06_ACLK] [get_bd_pins processing_system7_0_axi_periph/M07_ACLK] [get_bd_pins processing_system7_0_axi_periph/S00_ACLK] [get_bd_pins xadc_wiz_0/s_axi_aclk]
-  connect_bd_net -net processing_system7_0_FCLK_CLK2 [get_bd_ports MCLK] [get_bd_pins CLK_DIV_0/CLK_in] [get_bd_pins processing_system7_0/FCLK_CLK2] [get_bd_pins xlconcat_1/In3]
-  connect_bd_net -net rst_processing_system7_0_97M_peripheral_aresetn [get_bd_pins BTNs_4Bits/s_axi_aresetn] [get_bd_pins CLK_DIV_0/RSTN] [get_bd_pins CLK_DIV_1/RSTN] [get_bd_pins CLK_test_0/rstn] [get_bd_pins FIFO_top_0/s_aresetn] [get_bd_pins Jaxc_I2S_1/s_axi_aresetn] [get_bd_pins MyLED_0/s_axi_aresetn] [get_bd_pins SWs_4Bits/s_axi_aresetn] [get_bd_pins axi_protocol_converter_0/aresetn] [get_bd_pins mailbox_0/S0_AXI_ARESETN] [get_bd_pins mailbox_0/S1_AXI_ARESETN] [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins processing_system7_0_axi_periph/ARESETN] [get_bd_pins processing_system7_0_axi_periph/M00_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M02_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M03_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M04_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M05_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M06_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M07_ARESETN] [get_bd_pins processing_system7_0_axi_periph/S00_ARESETN] [get_bd_pins xadc_wiz_0/s_axi_aresetn]
-  connect_bd_net -net xadc_wiz_0_user_temp_alarm_out [get_bd_pins xadc_wiz_0/user_temp_alarm_out] [get_bd_pins xlconcat_0/In1]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins BTNs_4Bits/s_axi_aclk] [get_bd_pins FIFO_top_0/s_aclk] [get_bd_pins Jaxc_I2S_1/s_axi_aclk] [get_bd_pins MyLED_0/s_axi_aclk] [get_bd_pins SWs_4Bits/s_axi_aclk] [get_bd_pins axi_protocol_converter_0/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0_axi_periph/ACLK] [get_bd_pins processing_system7_0_axi_periph/M00_ACLK] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK] [get_bd_pins processing_system7_0_axi_periph/M02_ACLK] [get_bd_pins processing_system7_0_axi_periph/M03_ACLK] [get_bd_pins processing_system7_0_axi_periph/M04_ACLK] [get_bd_pins processing_system7_0_axi_periph/M05_ACLK] [get_bd_pins processing_system7_0_axi_periph/S00_ACLK] [get_bd_pins xadc_wiz_0/s_axi_aclk]
+  connect_bd_net -net processing_system7_0_FCLK_CLK2 [get_bd_ports MCLK] [get_bd_pins CLK_DIV_0/CLK_in] [get_bd_pins processing_system7_0/FCLK_CLK2]
+  connect_bd_net -net rst_processing_system7_0_97M_peripheral_aresetn [get_bd_pins BTNs_4Bits/s_axi_aresetn] [get_bd_pins CLK_DIV_0/RSTN] [get_bd_pins CLK_DIV_1/RSTN] [get_bd_pins CLK_test_0/rstn] [get_bd_pins FIFO_top_0/s_aresetn] [get_bd_pins Jaxc_I2S_1/s_axi_aresetn] [get_bd_pins MyLED_0/s_axi_aresetn] [get_bd_pins SWs_4Bits/s_axi_aresetn] [get_bd_pins axi_protocol_converter_0/aresetn] [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins processing_system7_0_axi_periph/ARESETN] [get_bd_pins processing_system7_0_axi_periph/M00_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M02_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M03_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M04_ARESETN] [get_bd_pins processing_system7_0_axi_periph/M05_ARESETN] [get_bd_pins processing_system7_0_axi_periph/S00_ARESETN] [get_bd_pins xadc_wiz_0/s_axi_aresetn]
   connect_bd_net -net xlconcat_0_dout [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins xlconcat_0/dout]
-  connect_bd_net -net xlconcat_1_dout [get_bd_ports Pmod_out] [get_bd_pins xlconcat_1/dout]
   connect_bd_net -net xlconstant_0_const [get_bd_pins ground/dout] [get_bd_pins processing_system7_0/SDIO0_WP]
 
   # Create address segments
@@ -222,8 +211,6 @@ proc create_root_design { parentCell } {
   create_bd_addr_seg -range 0x1000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs Jaxc_I2S_1/s_axi/reg0] SEG_Jaxc_I2S_1_reg0
   create_bd_addr_seg -range 0x10000 -offset 0x43C30000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs MyLED_0/S_AXI/S_AXI_reg] SEG_MyLED_0_S_AXI_reg
   create_bd_addr_seg -range 0x10000 -offset 0x41220000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs SWs_4Bits/S_AXI/Reg] SEG_SWs_4Bits_Reg
-  create_bd_addr_seg -range 0x10000 -offset 0x43800000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs mailbox_0/S0_AXI/S0_AXI_Reg] SEG_mailbox_0_S0_AXI_Reg
-  create_bd_addr_seg -range 0x10000 -offset 0x43810000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs mailbox_0/S1_AXI/S1_AXI_Reg] SEG_mailbox_0_S1_AXI_Reg
   create_bd_addr_seg -range 0x10000 -offset 0x43C10000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs xadc_wiz_0/s_axi_lite/Reg] SEG_xadc_wiz_0_Reg
   
 

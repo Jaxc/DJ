@@ -78,8 +78,6 @@ set rc [catch {
   set_property processing_order EARLY [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/constrs_1/new/constraints.xdc]
   read_xdc -ref system_Jaxc_I2S_1_0 -cells U0 /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/constrs_1/imports/constraints/i2s.xdc
   set_property processing_order EARLY [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/constrs_1/imports/constraints/i2s.xdc]
-  read_xdc -ref system_mailbox_0_0 -cells U0 /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_mailbox_0_0/system_mailbox_0_0.xdc
-  set_property processing_order EARLY [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_mailbox_0_0/system_mailbox_0_0.xdc]
   read_xdc /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.srcs/constrs_1/new/const.xdc
   link_design -top system_wrapper -part xc7z010clg400-1
   close_msg_db -file init_design.pb
@@ -142,19 +140,5 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-}
-
-start_step write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  write_bitstream -force system_wrapper.bit 
-  catch { write_sysdef -hwdef system_wrapper.hwdef -bitfile system_wrapper.bit -meminfo system_wrapper.mmi -ltxfile debug_nets.ltx -file system_wrapper.sysdef }
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
 }
 
