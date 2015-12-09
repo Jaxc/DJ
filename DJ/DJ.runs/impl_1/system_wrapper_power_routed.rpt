@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.2.1 (lin64) Build 1302555 Wed Aug  5 13:06:02 MDT 2015
-| Date             : Tue Nov 17 07:16:42 2015
+| Date             : Tue Dec  1 17:56:23 2015
 | Host             : Lappytoppy running 64-bit Linux Mint 17.2 Rafaela
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb
 | Design           : system_wrapper
@@ -50,14 +50,14 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.009 |        8 |       --- |             --- |
-| Slice Logic             |     0.004 |     4456 |       --- |             --- |
-|   LUT as Logic          |     0.003 |     1459 |     17600 |            8.29 |
+| Slice Logic             |     0.004 |     4463 |       --- |             --- |
+|   LUT as Logic          |     0.003 |     1466 |     17600 |            8.33 |
 |   Register              |    <0.001 |     2169 |     35200 |            6.16 |
 |   CARRY4                |    <0.001 |       28 |      4400 |            0.64 |
 |   BUFG                  |    <0.001 |        1 |        32 |            3.13 |
 |   LUT as Shift Register |    <0.001 |       63 |      6000 |            1.05 |
 |   Others                |     0.000 |      302 |       --- |             --- |
-| Signals                 |     0.005 |     3464 |       --- |             --- |
+| Signals                 |     0.005 |     3470 |       --- |             --- |
 | Block RAM               |     0.001 |        2 |        60 |            3.33 |
 | I/O                     |     0.006 |       23 |       100 |           23.00 |
 | XADC                    |     0.002 |        1 |       --- |             --- |

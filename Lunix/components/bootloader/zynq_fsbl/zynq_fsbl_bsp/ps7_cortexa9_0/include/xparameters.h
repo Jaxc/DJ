@@ -309,6 +309,7 @@
 /***Definitions for Core_nIRQ/nFIQ interrupts ****/
 /* Definitions for Fabric interrupts connected to ps7_scugic_0 */
 #define XPAR_FABRIC_JAXC_I2S_1_INT_OUT_INTR 61
+#define XPAR_FABRIC_XADC_WIZ_0_IP2INTC_IRPT_INTR 62
 
 /******************************************************************/
 

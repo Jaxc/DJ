@@ -24,9 +24,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_processi
 # IP: /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_processing_system7_0_axi_periph_2/system_processing_system7_0_axi_periph_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_processing_system7_0_axi_periph_2 || ORIG_REF_NAME==system_processing_system7_0_axi_periph_2}]
 
-# IP: /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_1 || ORIG_REF_NAME==system_xbar_1}]
-
 # IP: /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_MyLED_0_0/system_MyLED_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_MyLED_0_0 || ORIG_REF_NAME==system_MyLED_0_0}]
 
@@ -56,15 +53,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_Jaxc_I2S
 
 # IP: /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/Output_buffer_Block_RAM.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Output_buffer_Block_RAM || ORIG_REF_NAME==Output_buffer_Block_RAM}]
-
-# IP: /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_0 || ORIG_REF_NAME==system_xbar_0}]
-
-# IP: /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_2/system_xbar_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_2 || ORIG_REF_NAME==system_xbar_2}]
-
-# IP: /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_3/system_xbar_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_3 || ORIG_REF_NAME==system_xbar_3}]
 
 # IP: /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_4/system_xbar_4.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_4 || ORIG_REF_NAME==system_xbar_4}]

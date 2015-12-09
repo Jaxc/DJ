@@ -11,10 +11,21 @@
 #include <linux/seq_file.h> /* Needed for Sequence File Operations */
 
 //#include <include/math.h> // To create sine output
+#include <linux/wait.h> // Queue support
+#include <linux/sched.h> // needed for queue
 
 #include <linux/of_address.h>
 #include <linux/of_device.h>
 #include <linux/of_platform.h>
+
+
+// for I2C interactions
+/*#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>*/
+
+wait_queue_head_t audio_queue;
+
 
 /* Standard module information, edit as appropriate */
 MODULE_LICENSE("GPL");
@@ -42,6 +53,8 @@ unsigned char current_word;
 unsigned char read_address;
 unsigned char write_address;
 
+unsigned char flag = 0;
+
 module_param(myint, int, S_IRUGO);
 module_param(mystr, charp, S_IRUGO);
 
@@ -52,9 +65,15 @@ struct I2S_driver_local {
 	void __iomem *base_addr;
 };
 
+ unsigned long int_cnt = 0;
+
 static irqreturn_t I2S_driver_irq(int irq, void *res)
 {
-	printk("I2S_driver interrupt\n");
+  //if (flag == 0){ 
+    printk("bip\n");
+  //    }
+  flag = 1;
+  wake_up_interruptible(&audio_queue);
 	return IRQ_HANDLED;
 }
 
@@ -118,9 +137,16 @@ static int proc_I2S_driver_read(struct inode* inode, char __user *buffer, struct
 static int proc_I2S_driver_write(struct file *file, const char __user * buf,
                   size_t count, loff_t * ppos){
 
-    printk("<1>DATA written: %c\n", buf[0]);
+  //  printk("<1>DATA written: %x\n", (buf[0]<<24) + (buf[1]<<16));
+  flag = 0;
+	wait_event_interruptible(audio_queue, flag);
+  //printk("bop\n");
+  int i;
+  for( i = 0; i < 256 ; i ++){
+    iowrite32((buf[i*4]<<16) + (buf[i*4+1]<<24), base_addr+i);
+  }
 
-	if (buf[0] == 's'){
+  /*if (buf[0] == 's'){
     unsigned long i = 0;
 		printk("Square output selected\n");
 
@@ -151,8 +177,8 @@ static int proc_I2S_driver_write(struct file *file, const char __user * buf,
     //printk("%i/%i",i, addr_size);
 	}
      
-
-    return count;
+*/
+    return count < 256 ? count : 256;
 }
 
 
@@ -237,6 +263,11 @@ static int I2S_driver_probe(struct platform_device *pdev)
      printk(KERN_INFO DRIVER_NAME "probed at VA 0x%08lx, irq=%d\n",
             (unsigned long) base_addr, lp->irq);
  
+
+
+    dev_set_drvdata(dev,lp);
+    init_waitqueue_head(&audio_queue);
+    
      return 0;
     
     error3:
@@ -292,10 +323,44 @@ static struct platform_driver I2S_driver_driver = {
 
 static int __init I2S_driver_init(void)
 {
+
+  int Fdiic;
+  unsigned char I2C_slave_addr = 0b00011010;
+
 	printk("<1>Hello module world.\n");
 	printk("<1>Module parameters were (0x%08x) and \"%s\"\n", myint,
 	       mystr);
 
+ /* Fdiic = open("/dev/i2c-0");
+
+      if(Fdiic < 0)
+    {
+        printf("Cannot open the IIC device\n");
+ 
+        return 1;
+    }
+    Status = ioctl(Fdiic, I2C_SLAVE, I2C_slave_addr);
+    write(Fdiic, 0x0c10, 2);
+    write(Fdiic, 0x0810, 2);
+    write(Fdiic, 0x0450, 2);
+    write(Fdiic, 0x0650, 2);
+    write(Fdiic, 0x0a06, 2);
+    write(Fdiic, 0x0E0E, 2);
+    write(Fdiic, 0x1000, 2);
+    write(Fdiic, 0x0c00, 2);
+    write(Fdiic, 0x1201, 2);
+    close(Fdiic);*/
+
+
+/*i2cset -y 0 0x1a 0x0c 0x10
+i2cset -y 0 0x1a 0x08 0x10
+i2cset -y 0 0x1a 0x04 0x50
+i2cset -y 0 0x1a 0x06 0x50
+i2cset -y 0 0x1a 0x0a 0x06
+i2cset -y 0 0x1a 0x0E 0x0E
+i2cset -y 0 0x1a 0x10 0x00
+i2cset -y 0 0x1a 0x0c 0x00
+i2cset -y 0 0x1a 0x12 0x01*/
 	return platform_driver_register(&I2S_driver_driver);
 }
 
