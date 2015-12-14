@@ -169,7 +169,7 @@ int main(int argc, char *argv[])
 	
 
 	fp = fopen("/proc/I2S_driver", "w");
-	fwrite(WAV_Data,1,Chunk2Size,fp);
+		fwrite(WAV_Data,2,Chunk2Size/2,fp);
 	fclose(fp);
 
 

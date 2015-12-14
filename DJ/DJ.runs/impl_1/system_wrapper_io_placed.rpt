@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2.1 (lin64) Build 1302555 Wed Aug  5 13:06:02 MDT 2015
-| Date         : Tue Dec  1 17:55:57 2015
+| Date         : Wed Dec  9 21:13:19 2015
 | Host         : Lappytoppy running 64-bit Linux Mint 17.2 Rafaela
 | Command      : report_io -file system_wrapper_io_placed.rpt
 | Design       : system_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           153 |
+|           154 |
 +---------------+
 
 
@@ -411,7 +411,7 @@ Table of Contents
 | W16        |                     | High Range | IO_L18N_T2_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | W17        |                     | High Range | VCCO_34                 | VCCO          |                   |      34 |            |      |                     |                      |    3.30 |            |           |      |                  |
 | W18        |                     | High Range | IO_L22P_T3_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
-| W19        |                     | High Range | IO_L22N_T3_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
+| W19        | int_out             | High Range | IO_L22N_T3_34           | OUTPUT        | LVCMOS33          |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | W20        | Pmod_out[3]         | High Range | IO_L16N_T2_34           | OUTPUT        | LVCMOS33          |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | Y1         | DDR_dm[3]           |            | PS_DDR_DM3_502          | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
 | Y2         | DDR_dq[28]          |            | PS_DDR_DQ28_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |

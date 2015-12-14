@@ -70,7 +70,7 @@ struct I2S_driver_local {
 static irqreturn_t I2S_driver_irq(int irq, void *res)
 {
   //if (flag == 0){ 
-    printk("bip\n");
+  //  printk("bip\n");
   //    }
   flag = 1;
   wake_up_interruptible(&audio_queue);
@@ -134,6 +134,12 @@ static int proc_I2S_driver_read(struct inode* inode, char __user *buffer, struct
     return 4  ;
 }
 
+int32_t swap_int32( int32_t val )
+{
+    val = ((val << 8) & 0xFF00FF00) | ((val >> 8) & 0xFF00FF ); 
+    return (val << 16) | ((val >> 16) & 0xFFFF);
+}
+
 static int proc_I2S_driver_write(struct file *file, const char __user * buf,
                   size_t count, loff_t * ppos){
 
@@ -142,8 +148,14 @@ static int proc_I2S_driver_write(struct file *file, const char __user * buf,
 	wait_event_interruptible(audio_queue, flag);
   //printk("bop\n");
   int i;
+  unsigned char current_byte;
+  unsigned long output_word;
   for( i = 0; i < 256 ; i ++){
-    iowrite32((buf[i*4]<<16) + (buf[i*4+1]<<24), base_addr+i);
+    // matteVM
+    //swapped = (num>>8) | (num<<8);
+
+    output_word = (buf[i*4] << 8)+ buf[i*4+1];
+    iowrite32(swap_int32(output_word), base_addr+i);
   }
 
   /*if (buf[0] == 's'){
@@ -200,6 +212,9 @@ static int I2S_driver_probe(struct platform_device *pdev)
 
     struct I2S_driver_local *lp;
      int ret = 0;
+
+     // init Queue
+     init_waitqueue_head(&audio_queue);
  
      res = platform_get_resource(pdev, IORESOURCE_MEM, 0);
      
@@ -251,6 +266,7 @@ static int I2S_driver_probe(struct platform_device *pdev)
           (unsigned int __force)lp->base_addr);
         return 0;
       }
+      disable_irq(r_irq->start);
       lp->irq = r_irq->start;
       
       rc = request_irq(lp->irq, &I2S_driver_irq, 0, DRIVER_NAME, lp);
@@ -266,7 +282,7 @@ static int I2S_driver_probe(struct platform_device *pdev)
 
 
     dev_set_drvdata(dev,lp);
-    init_waitqueue_head(&audio_queue);
+    
     
      return 0;
     

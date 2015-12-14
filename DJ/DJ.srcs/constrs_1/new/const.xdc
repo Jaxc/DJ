@@ -12,6 +12,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports iic_0_sda_io]
 set_property PACKAGE_PIN P18 [get_ports {MUTE[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {MUTE[0]}]
 
+set_property PACKAGE_PIN W19 [get_ports int_out]
+set_property IOSTANDARD LVCMOS33 [get_ports int_out]
+
 set_property PACKAGE_PIN M17 [get_ports PBDAT]
 set_property IOSTANDARD LVCMOS33 [get_ports PBDAT]
 set_property PACKAGE_PIN L17 [get_ports PBLRC]
@@ -49,3 +52,5 @@ set_property SLEW FAST [get_ports {Pmod_out[0]}]
 set_property SLEW FAST [get_ports {Pmod_out[1]}]
 set_property SLEW FAST [get_ports {Pmod_out[2]}]
 set_property SLEW FAST [get_ports {Pmod_out[3]}]
+
+set_property SLEW FAST [get_ports int_out]

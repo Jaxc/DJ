@@ -2,8 +2,8 @@
 # Vivado v2015.2.1 (64-bit)
 # SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
 # IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
-# Start of session at: Tue Dec  1 17:49:35 2015
-# Process ID: 24110
+# Start of session at: Wed Dec  9 19:54:50 2015
+# Process ID: 22650
 # Log file: /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/synth_1/system_wrapper.vds
 # Journal file: /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -17,20 +17,20 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1015.312 ; gain = 209.566 ; free physical = 100 ; free virtual = 5406
+Starting RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1015.156 ; gain = 209.402 ; free physical = 114 ; free virtual = 5390
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'system_wrapper' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:51]
-INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12936' bound to instance 'iic_0_scl_iobuf' of component 'IOBUF' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'system_wrapper' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:52]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12936' bound to instance 'iic_0_scl_iobuf' of component 'IOBUF' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:109]
 INFO: [Synth 8-638] synthesizing module 'IOBUF' [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12936]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12936]
-INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12936' bound to instance 'iic_0_sda_iobuf' of component 'IOBUF' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:114]
-INFO: [Synth 8-3491] module 'system' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:2750' bound to instance 'system_i' of component 'system' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:121]
-INFO: [Synth 8-638] synthesizing module 'system' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:2795]
-INFO: [Synth 8-3491] module 'system_BTNs_4Bits_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_BTNs_4Bits_0/synth/system_BTNs_4Bits_0.vhd:59' bound to instance 'BTNs_4Bits' of component 'system_BTNs_4Bits_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3421]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:12936' bound to instance 'iic_0_sda_iobuf' of component 'IOBUF' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:116]
+INFO: [Synth 8-3491] module 'system' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:2750' bound to instance 'system_i' of component 'system' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'system' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:2796]
+INFO: [Synth 8-3491] module 'system_BTNs_4Bits_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_BTNs_4Bits_0/synth/system_BTNs_4Bits_0.vhd:59' bound to instance 'BTNs_4Bits' of component 'system_BTNs_4Bits_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3423]
 INFO: [Synth 8-638] synthesizing module 'system_BTNs_4Bits_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_BTNs_4Bits_0/synth/system_BTNs_4Bits_0.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -192,7 +192,7 @@ INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (6#1) [/home/jaxc/FPGA/z
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (7#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/gpio_core.vhd:173]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (8#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:282]
 INFO: [Synth 8-256] done synthesizing module 'system_BTNs_4Bits_0' (9#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_BTNs_4Bits_0/synth/system_BTNs_4Bits_0.vhd:84]
-INFO: [Synth 8-3491] module 'system_CLK_DIV_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_0/synth/system_CLK_DIV_0_0.vhd:56' bound to instance 'CLK_DIV_0' of component 'system_CLK_DIV_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3444]
+INFO: [Synth 8-3491] module 'system_CLK_DIV_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_0/synth/system_CLK_DIV_0_0.vhd:56' bound to instance 'CLK_DIV_0' of component 'system_CLK_DIV_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3446]
 INFO: [Synth 8-638] synthesizing module 'system_CLK_DIV_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_0/synth/system_CLK_DIV_0_0.vhd:64]
 	Parameter Division_factor bound to: 4 - type: integer 
 	Parameter pos_edge bound to: 1 - type: integer 
@@ -202,7 +202,7 @@ INFO: [Synth 8-638] synthesizing module 'CLK_DIV' [/home/jaxc/FPGA/zybo_base_sys
 	Parameter pos_edge bound to: 1 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'CLK_DIV' (10#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/jaxcie.org/clk_div_v1_1/8d995eeb/CLK_DIV.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'system_CLK_DIV_0_0' (11#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_0/synth/system_CLK_DIV_0_0.vhd:64]
-INFO: [Synth 8-3491] module 'system_CLK_DIV_0_1' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_1/synth/system_CLK_DIV_0_1.vhd:56' bound to instance 'CLK_DIV_1' of component 'system_CLK_DIV_0_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3450]
+INFO: [Synth 8-3491] module 'system_CLK_DIV_0_1' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_1/synth/system_CLK_DIV_0_1.vhd:56' bound to instance 'CLK_DIV_1' of component 'system_CLK_DIV_0_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3452]
 INFO: [Synth 8-638] synthesizing module 'system_CLK_DIV_0_1' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_1/synth/system_CLK_DIV_0_1.vhd:64]
 	Parameter Division_factor bound to: 64 - type: integer 
 	Parameter pos_edge bound to: 0 - type: integer 
@@ -212,13 +212,13 @@ INFO: [Synth 8-638] synthesizing module 'CLK_DIV__parameterized1' [/home/jaxc/FP
 	Parameter pos_edge bound to: 0 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'CLK_DIV__parameterized1' (11#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/jaxcie.org/clk_div_v1_1/8d995eeb/CLK_DIV.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'system_CLK_DIV_0_1' (12#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_DIV_0_1/synth/system_CLK_DIV_0_1.vhd:64]
-INFO: [Synth 8-3491] module 'system_CLK_test_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_test_0_0/synth/system_CLK_test_0_0.vhd:56' bound to instance 'CLK_test_0' of component 'system_CLK_test_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3456]
+INFO: [Synth 8-3491] module 'system_CLK_test_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_test_0_0/synth/system_CLK_test_0_0.vhd:56' bound to instance 'CLK_test_0' of component 'system_CLK_test_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3458]
 INFO: [Synth 8-638] synthesizing module 'system_CLK_test_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_test_0_0/synth/system_CLK_test_0_0.vhd:65]
 INFO: [Synth 8-3491] module 'CLK_test' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/jaxcie.org/clk_test_v1_3/bce03a79/CLK_test.vhd:34' bound to instance 'U0' of component 'CLK_test' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_test_0_0/synth/system_CLK_test_0_0.vhd:86]
 INFO: [Synth 8-638] synthesizing module 'CLK_test' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/jaxcie.org/clk_test_v1_3/bce03a79/CLK_test.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'CLK_test' (13#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/jaxcie.org/clk_test_v1_3/bce03a79/CLK_test.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'system_CLK_test_0_0' (14#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_CLK_test_0_0/synth/system_CLK_test_0_0.vhd:65]
-INFO: [Synth 8-3491] module 'system_FIFO_top_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/synth/system_FIFO_top_0_0.vhd:56' bound to instance 'FIFO_top_0' of component 'system_FIFO_top_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3463]
+INFO: [Synth 8-3491] module 'system_FIFO_top_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/synth/system_FIFO_top_0_0.vhd:56' bound to instance 'FIFO_top_0' of component 'system_FIFO_top_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3465]
 INFO: [Synth 8-638] synthesizing module 'system_FIFO_top_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/synth/system_FIFO_top_0_0.vhd:92]
 INFO: [Synth 8-3491] module 'FIFO_top' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/new/FIFO_top.vhd:8' bound to instance 'U0' of component 'FIFO_top' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/synth/system_FIFO_top_0_0.vhd:168]
 INFO: [Synth 8-638] synthesizing module 'FIFO_top' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/new/FIFO_top.vhd:44]
@@ -996,8 +996,8 @@ WARNING: [Synth 8-3848] Net s_axi_rid in module/entity FIFO_top does not have dr
 WARNING: [Synth 8-3848] Net s_axi_rlast in module/entity FIFO_top does not have driver. [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/new/FIFO_top.vhd:38]
 INFO: [Synth 8-256] done synthesizing module 'FIFO_top' (28#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/new/FIFO_top.vhd:44]
 INFO: [Synth 8-256] done synthesizing module 'system_FIFO_top_0_0' (29#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/synth/system_FIFO_top_0_0.vhd:92]
-INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3503]
-INFO: [Synth 8-3491] module 'system_Jaxc_I2S_1_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/synth/system_Jaxc_I2S_1_0.vhd:56' bound to instance 'Jaxc_I2S_1' of component 'system_Jaxc_I2S_1_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3507]
+INFO: [Synth 8-113] binding component instance 'GND' to cell 'GND' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3505]
+INFO: [Synth 8-3491] module 'system_Jaxc_I2S_1_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/synth/system_Jaxc_I2S_1_0.vhd:56' bound to instance 'Jaxc_I2S_1' of component 'system_Jaxc_I2S_1_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3509]
 INFO: [Synth 8-638] synthesizing module 'system_Jaxc_I2S_1_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/synth/system_Jaxc_I2S_1_0.vhd:87]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
@@ -1759,7 +1759,7 @@ INFO: [Synth 8-256] done synthesizing module 'I2S_controller' (33#1) [/home/jaxc
 INFO: [Synth 8-256] done synthesizing module 'Jaxc_slave_AXI' (34#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_Slave_axi.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'Jaxc_I2S_v1_0' (35#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd:59]
 INFO: [Synth 8-256] done synthesizing module 'system_Jaxc_I2S_1_0' (36#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/synth/system_Jaxc_I2S_1_0.vhd:87]
-INFO: [Synth 8-3491] module 'system_MyLED_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_MyLED_0_0/synth/system_MyLED_0_0.vhd:56' bound to instance 'MyLED_0' of component 'system_MyLED_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3536]
+INFO: [Synth 8-3491] module 'system_MyLED_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_MyLED_0_0/synth/system_MyLED_0_0.vhd:56' bound to instance 'MyLED_0' of component 'system_MyLED_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3538]
 INFO: [Synth 8-638] synthesizing module 'system_MyLED_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_MyLED_0_0/synth/system_MyLED_0_0.vhd:83]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
@@ -1778,7 +1778,7 @@ INFO: [Synth 8-226] default block is never used [/home/jaxc/FPGA/zybo_base_syste
 INFO: [Synth 8-256] done synthesizing module 'MyLED_v1_0_S_AXI' (37#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/user.org/myled_v1_0/9a59528e/hdl/MyLED_v1_0_S_AXI.vhd:89]
 INFO: [Synth 8-256] done synthesizing module 'MyLED_v1_0' (38#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/user.org/myled_v1_0/9a59528e/hdl/MyLED_v1_0.vhd:50]
 INFO: [Synth 8-256] done synthesizing module 'system_MyLED_0_0' (39#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_MyLED_0_0/synth/system_MyLED_0_0.vhd:83]
-INFO: [Synth 8-3491] module 'system_SWs_4Bits_2' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_SWs_4Bits_2/synth/system_SWs_4Bits_2.vhd:59' bound to instance 'SWs_4Bits' of component 'system_SWs_4Bits_2' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3561]
+INFO: [Synth 8-3491] module 'system_SWs_4Bits_2' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_SWs_4Bits_2/synth/system_SWs_4Bits_2.vhd:59' bound to instance 'SWs_4Bits' of component 'system_SWs_4Bits_2' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3563]
 INFO: [Synth 8-638] synthesizing module 'system_SWs_4Bits_2' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_SWs_4Bits_2/synth/system_SWs_4Bits_2.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -1797,7 +1797,7 @@ INFO: [Synth 8-638] synthesizing module 'system_SWs_4Bits_2' [/home/jaxc/FPGA/zy
 	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
 INFO: [Synth 8-3491] module 'axi_gpio' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_gpio_v2_0/e416c384/hdl/src/vhdl/axi_gpio.vhd:189' bound to instance 'U0' of component 'axi_gpio' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_SWs_4Bits_2/synth/system_SWs_4Bits_2.vhd:163]
 INFO: [Synth 8-256] done synthesizing module 'system_SWs_4Bits_2' (40#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_SWs_4Bits_2/synth/system_SWs_4Bits_2.vhd:84]
-INFO: [Synth 8-3491] module 'system_axi_protocol_converter_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/synth/system_axi_protocol_converter_0_0.v:57' bound to instance 'axi_protocol_converter_0' of component 'system_axi_protocol_converter_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3584]
+INFO: [Synth 8-3491] module 'system_axi_protocol_converter_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/synth/system_axi_protocol_converter_0_0.v:57' bound to instance 'axi_protocol_converter_0' of component 'system_axi_protocol_converter_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3586]
 INFO: [Synth 8-638] synthesizing module 'system_axi_protocol_converter_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/synth/system_axi_protocol_converter_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -2535,7 +2535,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_axi_regist
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_b2s' (55#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
 INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_axi_protocol_converter' (56#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/axi_protocol_converter_v2_1/017861a2/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
 INFO: [Synth 8-256] done synthesizing module 'system_axi_protocol_converter_0_0' (57#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_axi_protocol_converter_0_0/synth/system_axi_protocol_converter_0_0.v:57]
-INFO: [Synth 8-3491] module 'system_ground_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_ground_0/sim/system_ground_0.vhd:29' bound to instance 'ground' of component 'system_ground_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3646]
+INFO: [Synth 8-3491] module 'system_ground_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_ground_0/sim/system_ground_0.vhd:29' bound to instance 'ground' of component 'system_ground_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3648]
 INFO: [Synth 8-638] synthesizing module 'system_ground_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_ground_0/sim/system_ground_0.vhd:35]
 	Parameter CONST_VAL bound to: 1'b0 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
@@ -2545,7 +2545,7 @@ INFO: [Synth 8-638] synthesizing module 'xlconstant' [/home/jaxc/FPGA/zybo_base_
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'xlconstant' (58#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/xlconstant_v1_1/36911fd5/xlconstant.vhd:36]
 INFO: [Synth 8-256] done synthesizing module 'system_ground_0' (59#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_ground_0/sim/system_ground_0.vhd:35]
-INFO: [Synth 8-3491] module 'system_processing_system7_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:57' bound to instance 'processing_system7_0' of component 'system_processing_system7_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3650]
+INFO: [Synth 8-3491] module 'system_processing_system7_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:57' bound to instance 'processing_system7_0' of component 'system_processing_system7_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3652]
 INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
@@ -4746,7 +4746,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_crossbar_sasd' (
 INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_axi_crossbar' (87#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_4/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v:54]
 INFO: [Synth 8-256] done synthesizing module 'system_xbar_4' (88#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_4/synth/system_xbar_4.v:57]
 INFO: [Synth 8-256] done synthesizing module 'system_processing_system7_0_axi_periph_2' (89#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:1843]
-INFO: [Synth 8-3491] module 'system_xadc_wiz_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.vhd:54' bound to instance 'xadc_wiz_0' of component 'system_xadc_wiz_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3891]
+INFO: [Synth 8-3491] module 'system_xadc_wiz_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.vhd:54' bound to instance 'xadc_wiz_0' of component 'system_xadc_wiz_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3893]
 INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.vhd:102]
 	Parameter C_INSTANCE bound to: system_xadc_wiz_0_0_axi_xadc - type: string 
 	Parameter C_FAMILY bound to: virtex7 - type: string 
@@ -5141,7 +5141,7 @@ INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_interrupt_control' 
 INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_interrupt_control' (96#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_interrupt_control.vhd:240]
 INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_axi_xadc' (97#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0_axi_xadc.vhd:237]
 INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0' (98#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.vhd:102]
-INFO: [Synth 8-3491] module 'system_xlconcat_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.vhd:59' bound to instance 'xlconcat_0' of component 'system_xlconcat_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3928]
+INFO: [Synth 8-3491] module 'system_xlconcat_0_0' declared at '/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.vhd:59' bound to instance 'xlconcat_0' of component 'system_xlconcat_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:3930]
 INFO: [Synth 8-638] synthesizing module 'system_xlconcat_0_0' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.vhd:67]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
 	Parameter IN1_WIDTH bound to: 1 - type: integer 
@@ -5215,10 +5215,10 @@ INFO: [Synth 8-638] synthesizing module 'xlconcat' [/home/jaxc/FPGA/zybo_base_sy
 	Parameter dout_width bound to: 2 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'xlconcat' (99#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/work/xlconcat.vhd:100]
 INFO: [Synth 8-256] done synthesizing module 'system_xlconcat_0_0' (100#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.vhd:67]
-INFO: [Synth 8-256] done synthesizing module 'system' (101#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:2795]
-INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (102#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'system' (101#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system.vhd:2796]
+INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (102#1) [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:52]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:03:56 ; elapsed = 00:03:59 . Memory (MB): peak = 1245.273 ; gain = 439.527 ; free physical = 222 ; free virtual = 5222
+Finished RTL Elaboration : Time (s): cpu = 00:03:19 ; elapsed = 00:03:20 . Memory (MB): peak = 1245.117 ; gain = 439.363 ; free physical = 139 ; free virtual = 5127
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -5248,7 +5248,7 @@ INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[26] to constant 0 [
 INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[17] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
 INFO: [Synth 8-3295] tying undriven pin \prim_init.ram :DINB[8] to constant 0 [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/7b054ed9/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183623]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:57 ; elapsed = 00:04:00 . Memory (MB): peak = 1245.273 ; gain = 439.527 ; free physical = 221 ; free virtual = 5222
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:19 ; elapsed = 00:03:21 . Memory (MB): peak = 1245.117 ; gain = 439.363 ; free physical = 139 ; free virtual = 5127
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -5289,16 +5289,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1416.281 ; gain = 0.000 ; free physical = 106 ; free virtual = 5160
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1416.125 ; gain = 0.000 ; free physical = 121 ; free virtual = 5070
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:04:29 ; elapsed = 00:04:32 . Memory (MB): peak = 1416.285 ; gain = 610.539 ; free physical = 138 ; free virtual = 5160
+Finished Constraint Validation : Time (s): cpu = 00:03:52 ; elapsed = 00:03:53 . Memory (MB): peak = 1416.129 ; gain = 610.375 ; free physical = 117 ; free virtual = 5067
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:04:29 ; elapsed = 00:04:32 . Memory (MB): peak = 1416.285 ; gain = 610.539 ; free physical = 137 ; free virtual = 5161
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:52 ; elapsed = 00:03:54 . Memory (MB): peak = 1416.129 ; gain = 610.375 ; free physical = 117 ; free virtual = 5067
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -5335,7 +5335,7 @@ Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_per
 Applied set_property DONT_TOUCH = true for system_i/xadc_wiz_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for system_i/xlconcat_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:30 ; elapsed = 00:04:33 . Memory (MB): peak = 1416.285 ; gain = 610.539 ; free physical = 136 ; free virtual = 5161
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:52 ; elapsed = 00:03:54 . Memory (MB): peak = 1416.129 ; gain = 610.375 ; free physical = 117 ; free virtual = 5068
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -5383,7 +5383,7 @@ INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because ad
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'crnt_reg[write_state]' using encoding 'one-hot' in module 'Jaxc_slave_AXI'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:35 ; elapsed = 00:04:39 . Memory (MB): peak = 1416.285 ; gain = 610.539 ; free physical = 114 ; free virtual = 5149
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:58 ; elapsed = 00:04:00 . Memory (MB): peak = 1416.129 ; gain = 610.375 ; free physical = 102 ; free virtual = 5055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6209,7 +6209,7 @@ BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:04:36 ; elapsed = 00:04:39 . Memory (MB): peak = 1416.285 ; gain = 610.539 ; free physical = 114 ; free virtual = 5149
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:03:58 ; elapsed = 00:04:00 . Memory (MB): peak = 1416.129 ; gain = 610.375 ; free physical = 102 ; free virtual = 5055
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -6226,9 +6226,9 @@ INFO: [Synth 8-4471] merging register 'INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I/DO_I
 INFO: [Synth 8-4471] merging register 'INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I/DO_IRPT_INPUT[16].GEN_POS_EDGE_DETECT.irpt_dly2_reg' into 'INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I/DO_IRPT_INPUT[14].GEN_POS_EDGE_DETECT.irpt_dly2_reg' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_interrupt_control.vhd:639]
 INFO: [Synth 8-4471] merging register 'bus2ip_reset_active_high_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0_axi_xadc.vhd:639]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:04:38 ; elapsed = 00:04:41 . Memory (MB): peak = 1416.285 ; gain = 610.539 ; free physical = 113 ; free virtual = 5148
+Finished Cross Boundary Optimization : Time (s): cpu = 00:04:00 ; elapsed = 00:04:02 . Memory (MB): peak = 1416.129 ; gain = 610.375 ; free physical = 103 ; free virtual = 5056
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:04:38 ; elapsed = 00:04:41 . Memory (MB): peak = 1416.285 ; gain = 610.539 ; free physical = 113 ; free virtual = 5148
+Finished Parallel Reinference  : Time (s): cpu = 00:04:00 ; elapsed = 00:04:02 . Memory (MB): peak = 1416.129 ; gain = 610.375 ; free physical = 103 ; free virtual = 5056
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -6239,16 +6239,16 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:04:44 ; elapsed = 00:04:47 . Memory (MB): peak = 1416.289 ; gain = 610.543 ; free physical = 146 ; free virtual = 5133
+Finished Area Optimization : Time (s): cpu = 00:04:06 ; elapsed = 00:04:09 . Memory (MB): peak = 1416.133 ; gain = 610.379 ; free physical = 129 ; free virtual = 5038
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:04:44 ; elapsed = 00:04:47 . Memory (MB): peak = 1416.289 ; gain = 610.543 ; free physical = 146 ; free virtual = 5133
+Finished Parallel Area Optimization  : Time (s): cpu = 00:04:06 ; elapsed = 00:04:09 . Memory (MB): peak = 1416.133 ; gain = 610.379 ; free physical = 129 ; free virtual = 5038
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:04:44 ; elapsed = 00:04:47 . Memory (MB): peak = 1416.289 ; gain = 610.543 ; free physical = 146 ; free virtual = 5133
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:04:06 ; elapsed = 00:04:09 . Memory (MB): peak = 1416.133 ; gain = 610.379 ; free physical = 129 ; free virtual = 5038
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -6257,10 +6257,10 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:55 ; elapsed = 00:04:59 . Memory (MB): peak = 1537.281 ; gain = 731.535 ; free physical = 116 ; free virtual = 4981
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:18 ; elapsed = 00:04:21 . Memory (MB): peak = 1536.125 ; gain = 730.371 ; free physical = 165 ; free virtual = 4846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:57 ; elapsed = 00:05:00 . Memory (MB): peak = 1555.289 ; gain = 749.543 ; free physical = 110 ; free virtual = 4963
+Finished Timing Optimization : Time (s): cpu = 00:04:20 ; elapsed = 00:04:22 . Memory (MB): peak = 1554.133 ; gain = 748.379 ; free physical = 156 ; free virtual = 4831
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6373,7 +6373,7 @@ WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][9]
 WARNING: [Synth 8-3332] Sequential element (\slave/S_AXI_out_reg[S_AXI_RDATA][8] ) is unused and will be removed from module Jaxc_I2S_v1_0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:02 ; elapsed = 00:05:05 . Memory (MB): peak = 1581.305 ; gain = 775.559 ; free physical = 100 ; free virtual = 4937
+Finished Technology Mapping : Time (s): cpu = 00:04:25 ; elapsed = 00:04:28 . Memory (MB): peak = 1581.148 ; gain = 775.395 ; free physical = 128 ; free virtual = 4803
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6413,7 +6413,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:04 ; elapsed = 00:05:08 . Memory (MB): peak = 1581.305 ; gain = 775.559 ; free physical = 125 ; free virtual = 4936
+Finished IO Insertion : Time (s): cpu = 00:04:27 ; elapsed = 00:04:30 . Memory (MB): peak = 1581.148 ; gain = 775.395 ; free physical = 127 ; free virtual = 4803
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -6426,7 +6426,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:04 ; elapsed = 00:05:08 . Memory (MB): peak = 1581.305 ; gain = 775.559 ; free physical = 125 ; free virtual = 4936
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:27 ; elapsed = 00:04:30 . Memory (MB): peak = 1581.148 ; gain = 775.395 ; free physical = 127 ; free virtual = 4803
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6438,13 +6438,13 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:05 ; elapsed = 00:05:09 . Memory (MB): peak = 1581.305 ; gain = 775.559 ; free physical = 125 ; free virtual = 4936
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:28 ; elapsed = 00:04:31 . Memory (MB): peak = 1581.148 ; gain = 775.395 ; free physical = 127 ; free virtual = 4803
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Renaming Generated Ports : Time (s): cpu = 00:05:05 ; elapsed = 00:05:09 . Memory (MB): peak = 1581.305 ; gain = 775.559 ; free physical = 125 ; free virtual = 4936
+Start Renaming Generated Ports : Time (s): cpu = 00:04:28 ; elapsed = 00:04:31 . Memory (MB): peak = 1581.148 ; gain = 775.395 ; free physical = 127 ; free virtual = 4803
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:05:05 ; elapsed = 00:05:09 . Memory (MB): peak = 1581.305 ; gain = 775.559 ; free physical = 125 ; free virtual = 4936
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:28 ; elapsed = 00:04:31 . Memory (MB): peak = 1581.148 ; gain = 775.395 ; free physical = 127 ; free virtual = 4803
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -6503,14 +6503,14 @@ Report Cell Usage:
 |22    |FDSE       |   101|
 |23    |IBUF       |     8|
 |24    |IOBUF      |     2|
-|25    |OBUF       |    13|
+|25    |OBUF       |    14|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+------------------------------------------------+-------------------------------------------------------------+------+
 |      |Instance                                        |Module                                                       |Cells |
 +------+------------------------------------------------+-------------------------------------------------------------+------+
-|1     |top                                             |                                                             |  5359|
+|1     |top                                             |                                                             |  5360|
 |2     |  system_i                                      |system                                                       |  5336|
 |3     |    BTNs_4Bits                                  |system_BTNs_4Bits_0                                          |   108|
 |4     |      U0                                        |axi_gpio__2                                                  |   108|
@@ -6656,11 +6656,11 @@ Report Instance Areas:
 |144   |    xlconcat_0                                  |system_xlconcat_0_0                                          |     0|
 +------+------------------------------------------------+-------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:05:05 ; elapsed = 00:05:09 . Memory (MB): peak = 1581.305 ; gain = 775.559 ; free physical = 125 ; free virtual = 4936
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:29 ; elapsed = 00:04:31 . Memory (MB): peak = 1581.148 ; gain = 775.395 ; free physical = 127 ; free virtual = 4803
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 65 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:13 ; elapsed = 00:04:15 . Memory (MB): peak = 1581.305 ; gain = 449.980 ; free physical = 125 ; free virtual = 4937
-Synthesis Optimization Complete : Time (s): cpu = 00:05:06 ; elapsed = 00:05:09 . Memory (MB): peak = 1581.305 ; gain = 775.559 ; free physical = 125 ; free virtual = 4937
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:38 ; elapsed = 00:03:40 . Memory (MB): peak = 1581.148 ; gain = 448.980 ; free physical = 126 ; free virtual = 4803
+Synthesis Optimization Complete : Time (s): cpu = 00:04:29 ; elapsed = 00:04:32 . Memory (MB): peak = 1581.148 ; gain = 775.395 ; free physical = 126 ; free virtual = 4803
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 113 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -6675,6 +6675,6 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 723 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:05:03 ; elapsed = 00:05:06 . Memory (MB): peak = 1581.309 ; gain = 628.996 ; free physical = 118 ; free virtual = 4935
-report_utilization: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.31 . Memory (MB): peak = 1613.324 ; gain = 0.000 ; free physical = 158 ; free virtual = 4935
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  1 17:54:59 2015...
+synth_design: Time (s): cpu = 00:04:28 ; elapsed = 00:04:30 . Memory (MB): peak = 1581.152 ; gain = 627.996 ; free physical = 123 ; free virtual = 4802
+report_utilization: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1613.168 ; gain = 0.000 ; free physical = 113 ; free virtual = 4801
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 19:59:36 2015...
