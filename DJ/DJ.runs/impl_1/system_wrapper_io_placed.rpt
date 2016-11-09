@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2.1 (lin64) Build 1302555 Wed Aug  5 13:06:02 MDT 2015
-| Date         : Wed Dec  9 21:13:19 2015
+| Date         : Fri Oct  7 22:51:31 2016
 | Host         : Lappytoppy running 64-bit Linux Mint 17.2 Rafaela
 | Command      : report_io -file system_wrapper_io_placed.rpt
 | Design       : system_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           154 |
+|           150 |
 +---------------+
 
 
@@ -229,8 +229,8 @@ Table of Contents
 | K14        |                     | High Range | IO_L20P_T3_AD6P_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
 | K15        |                     |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | K16        |                     | High Range | IO_L24P_T3_AD15P_35     | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
-| K17        |                     | High Range | IO_L12P_T1_MRCC_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
-| K18        | BCLK                | High Range | IO_L12N_T1_MRCC_35      | OUTPUT        | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| K17        | ADC_DATA_in[0]      | High Range | IO_L12P_T1_MRCC_35      | INPUT         | LVCMOS33          |      35 |            |      |                     |                 NONE |         | FIXED      |           |      | NONE             |
+| K18        | BCLK[0]             | High Range | IO_L12N_T1_MRCC_35      | OUTPUT        | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | K19        |                     | High Range | IO_L10P_T1_AD11P_35     | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
 | K20        |                     | High Range | VCCO_35                 | VCCO          |                   |      35 |            |      |                     |                      |    3.30 |            |           |      |                  |
 | L1         | DDR_addr[5]         |            | PS_DDR_A5_502           | BIDIR         | SSTL15            |         |            | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
@@ -249,7 +249,7 @@ Table of Contents
 | L14        |                     | High Range | IO_L22P_T3_AD7P_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
 | L15        |                     | High Range | IO_L22N_T3_AD7N_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
 | L16        |                     | High Range | IO_L11P_T1_SRCC_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
-| L17        | PBLRC               | High Range | IO_L11N_T1_SRCC_35      | OUTPUT        | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| L17        | PBLRC[0]            | High Range | IO_L11N_T1_SRCC_35      | OUTPUT        | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | L18        |                     |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | L19        |                     | High Range | IO_L9P_T1_DQS_AD3P_35   | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
 | L20        |                     | High Range | IO_L9N_T1_DQS_AD3N_35   | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
@@ -269,7 +269,7 @@ Table of Contents
 | M14        | LED_out[0]          | High Range | IO_L23P_T3_35           | OUTPUT        | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | M15        | LED_out[1]          | High Range | IO_L23N_T3_35           | OUTPUT        | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | M16        |                     | High Range | VCCO_35                 | VCCO          |                   |      35 |            |      |                     |                      |    3.30 |            |           |      |                  |
-| M17        | PBDAT               | High Range | IO_L8P_T1_AD10P_35      | OUTPUT        | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| M17        | PBDAT[0]            | High Range | IO_L8P_T1_AD10P_35      | OUTPUT        | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
 | M18        |                     | High Range | IO_L8N_T1_AD10N_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
 | M19        |                     | High Range | IO_L7P_T1_AD2P_35       | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
 | M20        |                     | High Range | IO_L7N_T1_AD2N_35       | User IO       |                   |      35 |            |      |                     |                      |         |            |           |      |                  |
@@ -352,7 +352,7 @@ Table of Contents
 | T17        |                     | High Range | IO_L20P_T3_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | T18        |                     | High Range | VCCO_34                 | VCCO          |                   |      34 |            |      |                     |                      |    3.30 |            |           |      |                  |
 | T19        | MCLK                | High Range | IO_25_34                | OUTPUT        | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
-| T20        | Pmod_out[0]         | High Range | IO_L15P_T2_DQS_34       | OUTPUT        | LVCMOS33          |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| T20        |                     | High Range | IO_L15P_T2_DQS_34       | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | U1         |                     |            | VCCO_DDR_502            | VCCO          |                   |         |            |      |                     |                      |   any** |            |           |      |                  |
 | U2         | DDR_dq[22]          |            | PS_DDR_DQ22_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
 | U3         | DDR_dq[23]          |            | PS_DDR_DQ23_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
@@ -372,7 +372,7 @@ Table of Contents
 | U17        |                     | High Range | IO_L9N_T1_DQS_34        | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | U18        |                     | High Range | IO_L12P_T1_MRCC_34      | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | U19        |                     | High Range | IO_L12N_T1_MRCC_34      | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
-| U20        | Pmod_out[1]         | High Range | IO_L15N_T2_DQS_34       | OUTPUT        | LVCMOS33          |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| U20        |                     | High Range | IO_L15N_T2_DQS_34       | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | V1         | DDR_dq[24]          |            | PS_DDR_DQ24_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
 | V2         | DDR_dq[30]          |            | PS_DDR_DQ30_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
 | V3         | DDR_dq[31]          |            | PS_DDR_DQ31_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
@@ -392,7 +392,7 @@ Table of Contents
 | V17        |                     | High Range | IO_L21P_T3_DQS_34       | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | V18        |                     | High Range | IO_L21N_T3_DQS_34       | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | V19        |                     |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |      |                  |
-| V20        | Pmod_out[2]         | High Range | IO_L16P_T2_34           | OUTPUT        | LVCMOS33          |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| V20        |                     | High Range | IO_L16P_T2_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | W1         | DDR_dq[26]          |            | PS_DDR_DQ26_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
 | W2         |                     |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |      |                  |
 | W3         | DDR_dq[29]          |            | PS_DDR_DQ29_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
@@ -411,8 +411,8 @@ Table of Contents
 | W16        |                     | High Range | IO_L18N_T2_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | W17        |                     | High Range | VCCO_34                 | VCCO          |                   |      34 |            |      |                     |                      |    3.30 |            |           |      |                  |
 | W18        |                     | High Range | IO_L22P_T3_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
-| W19        | int_out             | High Range | IO_L22N_T3_34           | OUTPUT        | LVCMOS33          |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
-| W20        | Pmod_out[3]         | High Range | IO_L16N_T2_34           | OUTPUT        | LVCMOS33          |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |      | NONE             |
+| W19        |                     | High Range | IO_L22N_T3_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
+| W20        |                     | High Range | IO_L16N_T2_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |      |                  |
 | Y1         | DDR_dm[3]           |            | PS_DDR_DM3_502          | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
 | Y2         | DDR_dq[28]          |            | PS_DDR_DQ28_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |
 | Y3         | DDR_dq[25]          |            | PS_DDR_DQ25_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |      | SPLIT            |

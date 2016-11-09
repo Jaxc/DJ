@@ -17,11 +17,7 @@ set_property webtalk.parent_dir /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.cache/wt [current_
 set_property parent.project_path /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_repo_paths {
-  /home/jaxc/FPGA/IP
-  /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/ip_repo
-} [current_project]
-add_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/BLK_init.coe
+set_property ip_repo_paths /home/jaxc/FPGA/IP [current_project]
 add_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/system.bd
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_BTNs_4Bits_0/system_BTNs_4Bits_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_BTNs_4Bits_0/system_BTNs_4Bits_0_ooc.xdc]
@@ -34,17 +30,15 @@ set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_b
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/constrs_1/new/constraints.xdc]
-set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_FIFO_top_0_0/ip/FIFO_BLOCK_RAM/FIFO_BLOCK_RAM_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/sources_1/ip/Output_buffer_Block_RAM/Output_buffer_Block_RAM_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/constrs_1/imports/constraints/i2s.xdc]
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xbar_4/system_xbar_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_m00_regslice_0/system_m00_regslice_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_m01_regslice_0/system_m01_regslice_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_m02_regslice_0/system_m02_regslice_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_m03_regslice_0/system_m03_regslice_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_m04_regslice_0/system_m04_regslice_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_m05_regslice_0/system_m05_regslice_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_s00_mmu_0/system_s00_mmu_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/system_ooc.xdc]
 set_property is_locked true [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/system.bd]
 

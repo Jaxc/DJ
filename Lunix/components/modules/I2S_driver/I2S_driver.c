@@ -19,6 +19,7 @@
 #include <linux/of_platform.h>
 
 
+
 // for I2C interactions
 /*#include <stdio.h>
 #include <fcntl.h>
@@ -49,7 +50,7 @@ unsigned long remap_size;
 unsigned long addr_size = 512;
 unsigned long *base_addr;
 
-unsigned char current_word;
+unsigned long buffer_count;
 unsigned char read_address;
 unsigned char write_address;
 
@@ -57,6 +58,8 @@ unsigned char flag = 0;
 
 module_param(myint, int, S_IRUGO);
 module_param(mystr, charp, S_IRUGO);
+
+unsigned short sine_data[512];
 
 struct I2S_driver_local {
 	int irq;
@@ -90,8 +93,8 @@ static int proc_I2S_driver_open(struct inode* inode, struct file* file){
       char *buf;
       struct seq_file *m;
       int res;
-  
-      buf = (char *)kmalloc(size * sizeof(char), GFP_KERNEL);
+      buffer_count = 0;
+      buf = (char *)kmalloc(size * sizeof(short), GFP_KERNEL);
       if (!buf)
           return -ENOMEM;
   
@@ -104,34 +107,22 @@ static int proc_I2S_driver_open(struct inode* inode, struct file* file){
       } else {
           kfree(buf);
       }
-      
-      current_word = 0;
+    
 
       return res;
 }
 
-static int proc_I2S_driver_read(struct inode* inode, char __user *buffer, struct file* filp){
+static int proc_I2S_driver_read(struct file* filp, char __user *buffer, size_t count){
     
 	// READ NOT CURRENTLY SUPPORTED!!!
-    u32 I2S_value;
-    I2S_value = ioread32(base_addr);
+    int i;
+    for(i = 0; i < 511; i ++){
+      printk("0x%02x\n",sine_data[i]);
+      //buffer[i] = sine_data[i] && 0xFF;
+      //buffer[i+1] = (sine_data[i] >> 8) && 0xFF;
+    }
 
-    if (current_word) { return 0;}
-
-    //printk("<1> base_addr: %08lx", base_addr);
-
-
-    
-    buffer[0] = (I2S_value >> 24) & 0xFF;
-    buffer[1] = (I2S_value >> 16) & 0xFF;
-    buffer[2] = (I2S_value >> 8) & 0xFF;
-    buffer[3] = I2S_value & 0xFF;
-    buffer[4] = '\n';
-    printk("<1>%c%c%c%c",buffer[0],buffer[1],buffer[2],buffer[3]);
-    printk("<1> 0x%08x\n",I2S_value);
-
-    current_word++;
-    return 4  ;
+    return 0;
 }
 
 int32_t swap_int32( int32_t val )
@@ -143,21 +134,42 @@ int32_t swap_int32( int32_t val )
 static int proc_I2S_driver_write(struct file *file, const char __user * buf,
                   size_t count, loff_t * ppos){
 
-  //  printk("<1>DATA written: %x\n", (buf[0]<<24) + (buf[1]<<16));
+  //printk("<1>DATA written: %x\n", swap_int32((buf[0*2] << 8)+ buf[0*2+1]));
+  //printk("<1>DATA written: %x\n", swap_int32((buf[1*2] << 8)+ buf[1*2+1]));
+  //printk("<1>DATA written: %x\n", swap_int32((buf[2*2] << 8)+ buf[2*2+1]));
+  //printk("<1>DATA written: %x\n", swap_int32((buf[3*2] << 8)+ buf[3*2+1]));
   flag = 0;
 	wait_event_interruptible(audio_queue, flag);
   //printk("bop\n");
   int i;
   unsigned char current_byte;
   unsigned long output_word;
-  for( i = 0; i < 256 ; i ++){
-    // matteVM
-    //swapped = (num>>8) | (num<<8);
 
-    output_word = (buf[i*4] << 8)+ buf[i*4+1];
-    iowrite32(swap_int32(output_word), base_addr+i);
-  }
 
+  //if ((buffer_count % 2)==0 ){
+    for( i = 0; i < 511 ; i ++){
+      // matteVM
+      //swapped = (num>>8) | (num<<8);
+
+      output_word = (buf[i*2+1] << 8) | buf[i*2];
+      //output_word = buf[i];
+      sine_data[i] = (unsigned short) output_word;
+      //iowrite32(0xFFFFFFFF, base_addr+i);
+      iowrite32((output_word<<16), base_addr+i);
+    }
+  //}
+  /*else{
+    for( i = 0; i < 255 ; i ++){
+      // matteVM
+      //swapped = (num>>8) | (num<<8);
+
+      output_word = (buf[i*2+1] << 8)+ buf[i*2];
+      //output_word = buf[i];
+      sine_data[i] = (unsigned short) output_word;
+      //iowrite32(0xFFFFFFFF, base_addr+i);
+      iowrite32(output_word<<16, base_addr+i+256);
+    }
+  }*/
   /*if (buf[0] == 's'){
     unsigned long i = 0;
 		printk("Square output selected\n");
@@ -190,7 +202,7 @@ static int proc_I2S_driver_write(struct file *file, const char __user * buf,
 	}
      
 */
-    return count < 256 ? count : 256;
+    return count < 1024 ? count : 1024;
 }
 
 
@@ -318,7 +330,7 @@ static int I2S_driver_remove(struct platform_device *pdev)
 
 #ifdef CONFIG_OF
 static struct of_device_id I2S_driver_of_match[] = {
-	{ .compatible = "xlnx,Jaxc-I2S-1.6.0", },
+	{ .compatible = "xlnx,Jaxc-I2S-1.7.0", },
 	{ /* end of list */ },
 };
 MODULE_DEVICE_TABLE(of, I2S_driver_of_match);

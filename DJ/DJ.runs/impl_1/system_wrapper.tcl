@@ -58,7 +58,6 @@ set rc [catch {
   set_property ip_repo_paths {
   /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.cache/ip
   /home/jaxc/FPGA/IP
-  /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/ip_repo
 } [current_project]
   set_property ip_output_repo /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.cache/ip [current_project]
   add_files -quiet /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/synth_1/system_wrapper.dcp
@@ -76,8 +75,10 @@ set rc [catch {
   set_property processing_order EARLY [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.xdc]
   read_xdc -ref system_CLK_test_0_0 -cells U0 /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/constrs_1/new/constraints.xdc
   set_property processing_order EARLY [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/ipshared/constrs_1/new/constraints.xdc]
-  read_xdc -ref system_Jaxc_I2S_1_0 -cells U0 /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/constrs_1/imports/constraints/i2s.xdc
-  set_property processing_order EARLY [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_Jaxc_I2S_1_0/constrs_1/imports/constraints/i2s.xdc]
+  read_xdc -prop_thru_buffers -ref system_proc_sys_reset_0_0 /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0_board.xdc
+  set_property processing_order EARLY [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0_board.xdc]
+  read_xdc -ref system_proc_sys_reset_0_0 /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xdc
+  set_property processing_order EARLY [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xdc]
   read_xdc /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.srcs/constrs_1/new/const.xdc
   link_design -top system_wrapper -part xc7z010clg400-1
   close_msg_db -file init_design.pb

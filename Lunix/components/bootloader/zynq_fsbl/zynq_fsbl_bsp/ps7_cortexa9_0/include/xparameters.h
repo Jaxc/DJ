@@ -20,17 +20,6 @@
 
 /******************************************************************/
 
-/* Definitions for driver MYLED */
-#define XPAR_MYLED_NUM_INSTANCES 1
-
-/* Definitions for peripheral MYLED_0 */
-#define XPAR_MYLED_0_DEVICE_ID 0
-#define XPAR_MYLED_0_S_AXI_BASEADDR 0x43C30000
-#define XPAR_MYLED_0_S_AXI_HIGHADDR 0x43C3FFFF
-
-
-/******************************************************************/
-
 /* Definitions for driver DEVCFG */
 #define XPAR_XDCFG_NUM_INSTANCES 1
 
@@ -114,14 +103,9 @@
 /******************************************************************/
 
 
-/* Definitions for peripheral FIFO_TOP_0 */
-#define XPAR_FIFO_TOP_0_BASEADDR 0x60000000
-#define XPAR_FIFO_TOP_0_HIGHADDR 0x6000FFFF
-
-
-/* Definitions for peripheral JAXC_I2S_1 */
-#define XPAR_JAXC_I2S_1_BASEADDR 0x43C00000
-#define XPAR_JAXC_I2S_1_HIGHADDR 0x43C00FFF
+/* Definitions for peripheral JAXC_I2S_0 */
+#define XPAR_JAXC_I2S_0_BASEADDR 0x43C00000
+#define XPAR_JAXC_I2S_0_HIGHADDR 0x43C0FFFF
 
 
 /* Definitions for peripheral PS7_AFI_0 */
@@ -308,7 +292,7 @@
 
 /***Definitions for Core_nIRQ/nFIQ interrupts ****/
 /* Definitions for Fabric interrupts connected to ps7_scugic_0 */
-#define XPAR_FABRIC_JAXC_I2S_1_INT_OUT_INTR 61
+#define XPAR_FABRIC_JAXC_I2S_0_INT_OUT_INTR 61
 #define XPAR_FABRIC_XADC_WIZ_0_IP2INTC_IRPT_INTR 62
 
 /******************************************************************/
@@ -397,29 +381,6 @@
 #define XPAR_XSDPS_0_SDIO_CLK_FREQ_HZ 50000000
 #define XPAR_XSDPS_0_HAS_CD 1
 #define XPAR_XSDPS_0_HAS_WP 1
-
-
-/******************************************************************/
-
-/* Definitions for driver SYSMON */
-#define XPAR_XSYSMON_NUM_INSTANCES 1
-
-/* Definitions for peripheral XADC_WIZ_0 */
-#define XPAR_XADC_WIZ_0_IP_TYPE 0
-#define XPAR_XADC_WIZ_0_DEVICE_ID 0
-#define XPAR_XADC_WIZ_0_BASEADDR 0x43C10000
-#define XPAR_XADC_WIZ_0_HIGHADDR 0x43C1FFFF
-#define XPAR_XADC_WIZ_0_INCLUDE_INTR 1
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral XADC_WIZ_0 */
-#define XPAR_SYSMON_0_IP_TYPE 0
-#define XPAR_SYSMON_0_DEVICE_ID XPAR_XADC_WIZ_0_DEVICE_ID
-#define XPAR_SYSMON_0_BASEADDR 0x43C10000
-#define XPAR_SYSMON_0_HIGHADDR 0x43C1FFFF
-#define XPAR_SYSMON_0_INCLUDE_INTR 1
 
 
 /******************************************************************/

@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 
 	FILE *fp;
 	printf("HER");
-	fp = fopen("/mnt/music/305.wav", "r");
+	fp = fopen("/mnt/music/48.wav", "r");
 	printf("RO\n");
 
 	if (fp == NULL){
@@ -155,7 +155,7 @@ int main(int argc, char *argv[])
 	printf("Total duration: %u m %u s\n", FileDuration / 60, FileDuration % 60);
 
 
-	unsigned char *WAV_Data = malloc(Chunk2Size);
+	signed char *WAV_Data = malloc(Chunk2Size);
 	/*int i;
 	for( i = 0 ; i < Chunk2Size ; i++ ){
 		WAV_Data[i] = Read_1_byte_int(fp);
@@ -169,26 +169,15 @@ int main(int argc, char *argv[])
 	
 
 	fp = fopen("/proc/I2S_driver", "w");
-		fwrite(WAV_Data,2,Chunk2Size/2,fp);
+		fwrite(WAV_Data/2,1,Chunk2Size,fp);
+		//fwrite(WAV_Data,1,1024,fp);
 	fclose(fp);
-
-
-
-	//init_waitqueue_head(&my_queue);
-
-	/*unsigned long SampleToEnd = NumSamples;
-
-	if (waitqueue_active(&wqueue)) {
-
-		while(SampleToEnd > 0){
-			wait_event_interuptable(wqueue)
-		}
-
-
-		return 0;
+	
+	int i;
+	for(i = 0; i < 1024 ; i++){
+		printf("%x ", WAV_Data[i]);
 	}
-	else printf("Waitqueue not active \n");
-*/
+
 	return 0;
 
 }

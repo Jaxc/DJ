@@ -1,0 +1,751 @@
+#-----------------------------------------------------------
+# Vivado v2015.2.1 (64-bit)
+# SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
+# IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
+# Start of session at: Tue Jan 12 07:00:45 2016
+# Process ID: 6082
+# Log file: /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.tmp/axi_i2s_adi_v1_0_project/axi_i2s_adi_v1_0_project.runs/synth_1/axi_i2s_adi.vds
+# Journal file: /home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.tmp/axi_i2s_adi_v1_0_project/axi_i2s_adi_v1_0_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source axi_i2s_adi.tcl -notrace
+Command: synth_design -top axi_i2s_adi -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 960.266 ; gain = 154.520 ; free physical = 633 ; free virtual = 5571
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'axi_i2s_adi' [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/axi_i2s_adi.vhd:109]
+	Parameter C_SLOT_WIDTH bound to: 24 - type: integer 
+	Parameter C_LRCLK_POL bound to: 0 - type: integer 
+	Parameter C_BCLK_POL bound to: 0 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_DMA_TYPE bound to: 1 - type: integer 
+	Parameter C_NUM_CH bound to: 1 - type: integer 
+	Parameter C_HAS_TX bound to: 1 - type: integer 
+	Parameter C_HAS_RX bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'pl330_dma_fifo' [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/adi_common/pl330_dma_fifo.vhd:46]
+	Parameter RAM_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter FIFO_DWIDTH bound to: 24 - type: integer 
+	Parameter FIFO_DIRECTION bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dma_fifo' [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/adi_common/dma_fifo.vhd:27]
+	Parameter RAM_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter FIFO_DWIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dma_fifo' (1#1) [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/adi_common/dma_fifo.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'pl330_dma_fifo' (2#1) [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/adi_common/pl330_dma_fifo.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'pl330_dma_fifo__parameterized0' [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/adi_common/pl330_dma_fifo.vhd:46]
+	Parameter RAM_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter FIFO_DWIDTH bound to: 24 - type: integer 
+	Parameter FIFO_DIRECTION bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pl330_dma_fifo__parameterized0' (2#1) [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/adi_common/pl330_dma_fifo.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'i2s_controller' [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/i2s_controller.vhd:83]
+	Parameter C_SLOT_WIDTH bound to: 24 - type: integer 
+	Parameter C_BCLK_POL bound to: 0 - type: integer 
+	Parameter C_LRCLK_POL bound to: 0 - type: integer 
+	Parameter C_NUM_CH bound to: 1 - type: integer 
+	Parameter C_HAS_TX bound to: 1 - type: integer 
+	Parameter C_HAS_RX bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_synchronizer' [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/fifo_synchronizer.vhd:61]
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_synchronizer' (3#1) [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/fifo_synchronizer.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'i2s_clkgen' [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/i2s_clkgen.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'i2s_clkgen' (4#1) [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/i2s_clkgen.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'i2s_tx' [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/i2s_tx.vhd:63]
+	Parameter C_SLOT_WIDTH bound to: 24 - type: integer 
+	Parameter C_NUM bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'i2s_tx' (5#1) [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/i2s_tx.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'i2s_rx' [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/i2s_rx.vhd:64]
+	Parameter C_SLOT_WIDTH bound to: 24 - type: integer 
+	Parameter C_NUM bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'i2s_rx' (6#1) [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/i2s_rx.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'i2s_controller' (7#1) [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/i2s_controller.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'axi_ctrlif' [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/adi_common/axi_ctrlif.vhd:87]
+	Parameter C_NUM_REG bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'axi_ctrlif' (8#1) [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/adi_common/axi_ctrlif.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'axi_i2s_adi' (9#1) [/home/jaxc/FPGA/IP/ADI/axi_i2s_adi_1.0/hdl/axi_i2s_adi.vhd:109]
+WARNING: [Synth 8-3917] design axi_i2s_adi has port S_AXIS_TREADY driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[31] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[30] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[29] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[28] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[27] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[26] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[25] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[24] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[23] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[22] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[21] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[20] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[19] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[18] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[17] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[16] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[15] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[14] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[13] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[12] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[11] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[10] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[9] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[8] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[7] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[6] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[5] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TLAST driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TVALID driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TKEEP[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TKEEP[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TKEEP[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TKEEP[0] driven by constant 0
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_ACLK
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_ARESETN
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[31]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[30]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[29]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[28]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[27]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[26]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[25]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[24]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[23]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[22]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[21]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[20]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[19]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[18]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[17]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[16]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[15]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[14]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[13]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[12]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[11]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[10]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[9]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[8]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[7]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[6]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[5]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[4]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[3]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[2]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[1]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[0]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TLAST
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TVALID
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port M_AXIS_ACLK
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port M_AXIS_TREADY
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 996.555 ; gain = 190.809 ; free physical = 594 ; free virtual = 5533
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 996.555 ; gain = 190.809 ; free physical = 594 ; free virtual = 5533
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.555 ; gain = 198.809 ; free physical = 594 ; free virtual = 5533
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-5546] ROM "channel_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "S_AXI_ARREADY" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "S_AXI_AWREADY" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "S_AXI_BVALID" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "drtype" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "drtype" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "I2S_RESET_REG" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "I2S_CONTROL_REG" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "I2S_CLK_CONTROL_REG" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PERIOD_LEN_REG" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1020.570 ; gain = 214.824 ; free physical = 579 ; free virtual = 5517
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 27    
++---RAMs : 
+	              192 Bit         RAMs := 2     
+	               20 Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   6 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_i2s_adi 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 3     
+Module fifo_synchronizer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	               20 Bit         RAMs := 1     
+Module i2s_clkgen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module i2s_tx 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module i2s_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module i2s_controller 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module axi_ctrlif 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+Module dma_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              192 Bit         RAMs := 1     
+Module pl330_dma_fifo 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module pl330_dma_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1100.887 ; gain = 295.141 ; free physical = 512 ; free virtual = 5440
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ctrl/clkgen/channel_sync" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design axi_i2s_adi has port S_AXIS_TREADY driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[31] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[30] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[29] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[28] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[27] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[26] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[25] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[24] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[23] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[22] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[21] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[20] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[19] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[18] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[17] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[16] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[15] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[14] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[13] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[12] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[11] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[10] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[9] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[8] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[7] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[6] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[5] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[4] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TDATA[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TLAST driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TVALID driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TKEEP[3] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TKEEP[2] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TKEEP[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port M_AXIS_TKEEP[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port DMA_REQ_TX_DAREADY driven by constant 1
+WARNING: [Synth 8-3917] design axi_i2s_adi has port DMA_REQ_TX_DRTYPE[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port DMA_REQ_TX_DRLAST driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port DMA_REQ_RX_DAREADY driven by constant 1
+WARNING: [Synth 8-3917] design axi_i2s_adi has port DMA_REQ_RX_DRTYPE[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port DMA_REQ_RX_DRLAST driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port S_AXI_RRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port S_AXI_RRESP[0] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port S_AXI_BRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design axi_i2s_adi has port S_AXI_BRESP[0] driven by constant 0
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_ACLK
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_ARESETN
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[31]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[30]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[29]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[28]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[27]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[26]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[25]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[24]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[23]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[22]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[21]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[20]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[19]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[18]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[17]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[16]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[15]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[14]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[13]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[12]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[11]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[10]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[9]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[8]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[7]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[6]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[5]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[4]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[3]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[2]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[1]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TDATA[0]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TLAST
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXIS_TVALID
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port M_AXIS_ACLK
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port M_AXIS_TREADY
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[31]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[30]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[29]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[28]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[27]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[26]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[25]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[24]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[23]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[22]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[21]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[20]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[19]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[18]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[17]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[16]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[15]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[14]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[13]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[12]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[11]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[10]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[9]
+WARNING: [Synth 8-3331] design axi_i2s_adi has unconnected port S_AXI_AWADDR[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1101.895 ; gain = 296.148 ; free physical = 510 ; free virtual = 5438
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1101.895 ; gain = 296.148 ; free physical = 510 ; free virtual = 5438
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+---------------------------------------------+-----------+----------------------+--------------+--------------------+
+|Module Name | RTL Object                                  | Inference | Size (Depth x Width) | Primitives   | Hierarchical Name  | 
++------------+---------------------------------------------+-----------+----------------------+--------------+--------------------+
+|axi_i2s_adi | ctrl/tx_sync/fifo_reg                       | Implied   | 4 x 5                | RAM32M x 1   | axi_i2s_adi/ram__4 | 
+|axi_i2s_adi | ctrl/rx_gen.rx_sync/fifo_reg                | Implied   | 4 x 5                | RAM32M x 1   | axi_i2s_adi/ram__5 | 
+|axi_i2s_adi | pl330_dma_tx_gen.tx_fifo/fifo/data_fifo_reg | Implied   | 8 x 24               | RAM32M x 4   | axi_i2s_adi/ram__6 | 
+|axi_i2s_adi | pl330_dma_rx_gen.rx_fifo/fifo/data_fifo_reg | Implied   | 8 x 24               | RAM32M x 4   | axi_i2s_adi/ram__7 | 
++------------+---------------------------------------------+-----------+----------------------+--------------+--------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ctrl/tx_gen.tx/gen[0].data_int_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ctrlif/rd_state_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (\ctrl/rx_gen.rx_sync/out_data_reg[3] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[31] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[30] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[29] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[28] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[27] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[26] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[25] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[24] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[15] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[14] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[13] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[12] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[11] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[10] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[9] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CLK_CONTROL_REG_reg[8] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[31] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[30] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[29] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[28] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[27] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[26] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[25] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[24] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[23] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[22] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[21] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[20] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[19] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[18] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[17] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[16] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[15] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[14] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[13] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[12] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[11] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[10] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[9] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[8] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[7] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[6] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[5] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[4] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_CONTROL_REG_reg[3] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\ctrl/tx_gen.tx/gen[0].data_int_reg[0][7] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\ctrl/tx_gen.tx/gen[0].data_int_reg[0][6] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\ctrl/tx_gen.tx/gen[0].data_int_reg[0][5] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\ctrl/tx_gen.tx/gen[0].data_int_reg[0][4] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\ctrl/tx_gen.tx/gen[0].data_int_reg[0][3] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\ctrl/tx_gen.tx/gen[0].data_int_reg[0][2] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\ctrl/tx_gen.tx/gen[0].data_int_reg[0][1] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\ctrl/tx_gen.tx/gen[0].data_int_reg[0][0] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\ctrlif/rd_state_reg[1] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[31] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[30] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[29] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[28] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[27] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[26] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[25] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[24] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[23] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[22] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[21] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[20] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[19] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[18] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[17] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\PERIOD_LEN_REG_reg[16] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\cnt_reg[8] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\cnt_reg[9] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\cnt_reg[10] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\cnt_reg[11] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\cnt_reg[12] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\cnt_reg[13] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\cnt_reg[14] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\cnt_reg[15] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[31] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[30] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[29] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[28] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[27] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[26] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[25] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[24] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[23] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[22] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[21] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[20] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[19] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[18] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[17] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[16] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[15] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[14] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[13] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[12] ) is unused and will be removed from module axi_i2s_adi.
+WARNING: [Synth 8-3332] Sequential element (\I2S_RESET_REG_reg[11] ) is unused and will be removed from module axi_i2s_adi.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1134.941 ; gain = 329.195 ; free physical = 477 ; free virtual = 5405
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1134.941 ; gain = 329.195 ; free physical = 477 ; free virtual = 5405
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1134.941 ; gain = 329.195 ; free physical = 477 ; free virtual = 5405
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1134.941 ; gain = 329.195 ; free physical = 477 ; free virtual = 5405
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1142.941 ; gain = 337.195 ; free physical = 468 ; free virtual = 5397
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1142.941 ; gain = 337.195 ; free physical = 468 ; free virtual = 5397
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1142.941 ; gain = 337.195 ; free physical = 468 ; free virtual = 5397
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1142.941 ; gain = 337.195 ; free physical = 468 ; free virtual = 5397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1142.941 ; gain = 337.195 ; free physical = 468 ; free virtual = 5397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1142.941 ; gain = 337.195 ; free physical = 468 ; free virtual = 5397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_i2s_adi | ctrl/rx_gen.rx/gen[0].data_int_reg[0][8] | 9      | 1     | YES          | NO                 | NO                | 1      | 0       | 
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |     2|
+|3     |LUT1   |    14|
+|4     |LUT2   |    21|
+|5     |LUT3   |    48|
+|6     |LUT4   |    23|
+|7     |LUT5   |    34|
+|8     |LUT6   |    68|
+|9     |RAM32M |    10|
+|10    |SRL16E |     1|
+|11    |FDRE   |   214|
+|12    |FDSE   |     6|
+|13    |IBUF   |    61|
+|14    |OBUF   |    94|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-------------------------------+------+
+|      |Instance                     |Module                         |Cells |
++------+-----------------------------+-------------------------------+------+
+|1     |top                          |                               |   600|
+|2     |  ctrl                       |i2s_controller                 |   237|
+|3     |    clkgen                   |i2s_clkgen                     |    59|
+|4     |    \rx_gen.rx               |i2s_rx                         |    68|
+|5     |    \rx_gen.rx_sync          |fifo_synchronizer              |    22|
+|6     |    \tx_gen.tx               |i2s_tx                         |    56|
+|7     |    tx_sync                  |fifo_synchronizer_1            |    20|
+|8     |  ctrlif                     |axi_ctrlif                     |    69|
+|9     |  \pl330_dma_rx_gen.rx_fifo  |pl330_dma_fifo__parameterized0 |    40|
+|10    |    fifo                     |dma_fifo_0                     |    30|
+|11    |  \pl330_dma_tx_gen.tx_fifo  |pl330_dma_fifo                 |    39|
+|12    |    fifo                     |dma_fifo                       |    29|
++------+-----------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1142.941 ; gain = 337.195 ; free physical = 468 ; free virtual = 5397
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 333 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1142.941 ; gain = 220.676 ; free physical = 468 ; free virtual = 5397
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1142.941 ; gain = 337.195 ; free physical = 468 ; free virtual = 5397
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 288 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1217.953 ; gain = 303.688 ; free physical = 419 ; free virtual = 5347
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1249.973 ; gain = 0.000 ; free physical = 417 ; free virtual = 5345
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 12 07:01:09 2016...
