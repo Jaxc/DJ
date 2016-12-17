@@ -20,6 +20,25 @@
 
 /******************************************************************/
 
+/* Definitions for driver AXI_I2S_ADI */
+#define XPAR_AXI_I2S_ADI_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_I2S_ADI_0 */
+#define XPAR_AXI_I2S_ADI_0_DEVICE_ID 0
+#define XPAR_AXI_I2S_ADI_0_S_AXI_BASEADDR 0x43C10000
+#define XPAR_AXI_I2S_ADI_0_S_AXI_HIGHADDR 0x43C1FFFF
+
+
+/******************************************************************/
+
+
+/* Definitions for peripheral PS7_DDR_0 */
+#define XPAR_PS7_DDR_0_S_AXI_BASEADDR 0x00100000
+#define XPAR_PS7_DDR_0_S_AXI_HIGHADDR 0x1FFFFFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver DEVCFG */
 #define XPAR_XDCFG_NUM_INSTANCES 1
 
@@ -103,11 +122,6 @@
 /******************************************************************/
 
 
-/* Definitions for peripheral JAXC_I2S_0 */
-#define XPAR_JAXC_I2S_0_BASEADDR 0x43C00000
-#define XPAR_JAXC_I2S_0_HIGHADDR 0x43C0FFFF
-
-
 /* Definitions for peripheral PS7_AFI_0 */
 #define XPAR_PS7_AFI_0_S_AXI_BASEADDR 0xF8008000
 #define XPAR_PS7_AFI_0_S_AXI_HIGHADDR 0xF8008FFF
@@ -126,11 +140,6 @@
 /* Definitions for peripheral PS7_AFI_3 */
 #define XPAR_PS7_AFI_3_S_AXI_BASEADDR 0xF800B000
 #define XPAR_PS7_AFI_3_S_AXI_HIGHADDR 0xF800BFFF
-
-
-/* Definitions for peripheral PS7_DDR_0 */
-#define XPAR_PS7_DDR_0_S_AXI_BASEADDR 0x00100000
-#define XPAR_PS7_DDR_0_S_AXI_HIGHADDR 0x1FFFFFFF
 
 
 /* Definitions for peripheral PS7_DDRC_0 */
@@ -289,10 +298,7 @@
 
 /******************************************************************/
 
-
-/***Definitions for Core_nIRQ/nFIQ interrupts ****/
 /* Definitions for Fabric interrupts connected to ps7_scugic_0 */
-#define XPAR_FABRIC_JAXC_I2S_0_INT_OUT_INTR 61
 #define XPAR_FABRIC_XADC_WIZ_0_IP2INTC_IRPT_INTR 62
 
 /******************************************************************/
@@ -370,6 +376,9 @@
 #define XPAR_PS7_SD_0_SDIO_CLK_FREQ_HZ 50000000
 #define XPAR_PS7_SD_0_HAS_CD 1
 #define XPAR_PS7_SD_0_HAS_WP 1
+#define XPAR_PS7_SD_0_BUS_WIDTH 0
+#define XPAR_PS7_SD_0_MIO_BANK 0
+#define XPAR_PS7_SD_0_HAS_EMIO 0
 
 
 /******************************************************************/
@@ -381,6 +390,32 @@
 #define XPAR_XSDPS_0_SDIO_CLK_FREQ_HZ 50000000
 #define XPAR_XSDPS_0_HAS_CD 1
 #define XPAR_XSDPS_0_HAS_WP 1
+#define XPAR_XSDPS_0_BUS_WIDTH 0
+#define XPAR_XSDPS_0_MIO_BANK 0
+#define XPAR_XSDPS_0_HAS_EMIO 0
+
+
+/******************************************************************/
+
+/* Definitions for driver SYSMON */
+#define XPAR_XSYSMON_NUM_INSTANCES 1
+
+/* Definitions for peripheral XADC_WIZ_0 */
+#define XPAR_XADC_WIZ_0_IP_TYPE 0
+#define XPAR_XADC_WIZ_0_DEVICE_ID 0
+#define XPAR_XADC_WIZ_0_BASEADDR 0x43C00000
+#define XPAR_XADC_WIZ_0_HIGHADDR 0x43C0FFFF
+#define XPAR_XADC_WIZ_0_INCLUDE_INTR 1
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral XADC_WIZ_0 */
+#define XPAR_SYSMON_0_IP_TYPE 0
+#define XPAR_SYSMON_0_DEVICE_ID XPAR_XADC_WIZ_0_DEVICE_ID
+#define XPAR_SYSMON_0_BASEADDR 0x43C00000
+#define XPAR_SYSMON_0_HIGHADDR 0x43C0FFFF
+#define XPAR_SYSMON_0_INCLUDE_INTR 1
 
 
 /******************************************************************/
@@ -448,3 +483,5 @@
 
 /* Xilinx FAT File System Library (XilFFs) User Settings */
 #define FILE_SYSTEM_INTERFACE_SD
+#define FILE_SYSTEM_USE_MKFS
+#define FILE_SYSTEM_NUM_LOGIC_VOL 2

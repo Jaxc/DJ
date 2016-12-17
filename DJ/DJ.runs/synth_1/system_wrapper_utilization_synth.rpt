@@ -1,11 +1,11 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.2.1 (lin64) Build 1302555 Wed Aug  5 13:06:02 MDT 2015
-| Date         : Fri Oct  7 22:50:34 2016
+| Tool Version : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
+| Date         : Sat Dec 17 14:25:30 2016
 | Host         : Lappytoppy running 64-bit Linux Mint 17.2 Rafaela
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
-| Device       : xc7z010
+| Device       : 7z010clg400-1
 | Design State : Synthesized
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 1800 |     0 |     17600 | 10.23 |
-|   LUT as Logic             | 1689 |     0 |     17600 |  9.60 |
+| Slice LUTs*                | 1323 |     0 |     17600 |  7.52 |
+|   LUT as Logic             | 1212 |     0 |     17600 |  6.89 |
 |   LUT as Memory            |  111 |     0 |      6000 |  1.85 |
 |     LUT as Distributed RAM |   40 |     0 |           |       |
 |     LUT as Shift Register  |   71 |     0 |           |       |
-| Slice Registers            | 2007 |     0 |     35200 |  5.70 |
-|   Register as Flip Flop    | 2007 |     0 |     35200 |  5.70 |
+| Slice Registers            | 1152 |     0 |     35200 |  3.27 |
+|   Register as Flip Flop    | 1152 |     0 |     35200 |  3.27 |
 |   Register as Latch        |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                   |    0 |     0 |      8800 |  0.00 |
 | F8 Muxes                   |    0 |     0 |      4400 |  0.00 |
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 39    |          Yes |           - |        Reset |
-| 109   |          Yes |         Set |            - |
-| 1859  |          Yes |       Reset |            - |
+| 70    |          Yes |         Set |            - |
+| 1043  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -100,7 +100,7 @@ Table of Contents
 | OUT_FIFO                    |    0 |     0 |         8 |   0.00 |
 | IN_FIFO                     |    0 |     0 |         8 |   0.00 |
 | IDELAYCTRL                  |    0 |     0 |         2 |   0.00 |
-| IBUFGDS                     |    0 |     0 |        96 |   0.00 |
+| IBUFDS                      |    0 |     0 |        96 |   0.00 |
 | PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |         8 |   0.00 |
 | PHASER_IN/PHASER_IN_PHY     |    0 |     0 |         8 |   0.00 |
 | IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       100 |   0.00 |
@@ -128,18 +128,18 @@ Table of Contents
 6. Specific Feature
 -------------------
 
-+-------------+------+-------+-----------+--------+
-|  Site Type  | Used | Fixed | Available |  Util% |
-+-------------+------+-------+-----------+--------+
-| BSCANE2     |    0 |     0 |         4 |   0.00 |
-| CAPTUREE2   |    0 |     0 |         1 |   0.00 |
-| DNA_PORT    |    0 |     0 |         1 |   0.00 |
-| EFUSE_USR   |    0 |     0 |         1 |   0.00 |
-| FRAME_ECCE2 |    0 |     0 |         1 |   0.00 |
-| ICAPE2      |    0 |     0 |         2 |   0.00 |
-| STARTUPE2   |    0 |     0 |         1 |   0.00 |
-| XADC        |    1 |     0 |         1 | 100.00 |
-+-------------+------+-------+-----------+--------+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
 
 
 7. Primitives
@@ -148,15 +148,15 @@ Table of Contents
 +----------+------+----------------------+
 | Ref Name | Used |  Functional Category |
 +----------+------+----------------------+
-| FDRE     | 1859 |         Flop & Latch |
-| LUT6     |  489 |                  LUT |
-| LUT1     |  473 |                  LUT |
-| LUT3     |  402 |                  LUT |
-| LUT5     |  306 |                  LUT |
-| LUT4     |  200 |                  LUT |
-| LUT2     |  131 |                  LUT |
+| FDRE     | 1043 |         Flop & Latch |
+| LUT1     |  450 |                  LUT |
+| LUT3     |  334 |                  LUT |
+| LUT6     |  245 |                  LUT |
+| LUT5     |  186 |                  LUT |
+| LUT4     |  139 |                  LUT |
 | BIBUF    |  130 |                   IO |
-| FDSE     |  109 |         Flop & Latch |
+| LUT2     |   81 |                  LUT |
+| FDSE     |   70 |         Flop & Latch |
 | RAMD32   |   60 |   Distributed Memory |
 | SRLC32E  |   47 |   Distributed Memory |
 | FDCE     |   39 |         Flop & Latch |
@@ -167,7 +167,6 @@ Table of Contents
 | OBUF     |    9 |                   IO |
 | BUFG     |    3 |                Clock |
 | OBUFT    |    2 |                   IO |
-| XADC     |    1 |               Others |
 | PS7      |    1 | Specialized Resource |
 +----------+------+----------------------+
 
