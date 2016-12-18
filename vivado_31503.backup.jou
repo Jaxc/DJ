@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Dec 17 16:07:36 2016
+# Process ID: 31503
+# Current directory: /home/jaxc/FPGA/DJ-Jaxc
+# Command line: vivado
+# Log file: /home/jaxc/FPGA/DJ-Jaxc/vivado.log
+# Journal file: /home/jaxc/FPGA/DJ-Jaxc/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project HW /home/jaxc/FPGA/DJ-Jaxc/HW -part xc7z010clg400-1
+set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
+create_bd_design "top"
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property -dict [list CONFIG.PCW_IMPORT_BOARD_PRESET {/home/jaxc/FPGA/DJ-Jaxc/ZYBO_zynq_def.xml}] [get_bd_cells processing_system7_0]
+save_bd_design
+close_project
+open_project /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.xpr
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {system_ground_0 system_xlconstant_0_2 system_SWs_4Bits_2 system_axi_vdma_0_0 system_axi_vdma_1_1 system_processing_system7_0_0 system_processing_system7_0_axi_periph_2 system_vdd_1 system_LEDs_4Bits_1 system_axi_protocol_converter_0_0 system_axi_mem_intercon_0 system_BTNs_4Bits_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {system_ground_0 system_xlconstant_0_2 system_SWs_4Bits_2 system_axi_vdma_0_0 system_axi_vdma_1_1 system_processing_system7_0_0 system_processing_system7_0_axi_periph_2 system_vdd_1 system_LEDs_4Bits_1 system_axi_protocol_converter_0_0 system_axi_mem_intercon_0 system_BTNs_4Bits_0}] -no_script -sync -force -quiet
+generate_target all [get_files  /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.srcs/sources_1/bd/system/system.bd] -directory /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.ip_user_files/sim_scripts -ip_user_files_dir /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.ip_user_files -ipstatic_source_dir /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.cache/compile_simlib/modelsim} {questa=/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.cache/compile_simlib/questa} {ies=/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.cache/compile_simlib/ies} {vcs=/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.cache/compile_simlib/vcs} {riviera=/home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+file mkdir /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.sdk
+file copy -force /home/jaxc/FPGA/zybo_base_system/source/vivado/hw/zybo_bsd/zybo_bsd.runs/impl_1/system_wrapper.sysdef /home/jaxc/FPGA/DJ-Jaxc/SW/system_wrapper.hdf
+
+close_project
+open_project /home/jaxc/FPGA/DJ-Jaxc/HW/HW.xpr
+open_bd_design {/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/top.bd}
+config_ip_cache -clear_output_repo
+set_property  ip_repo_paths  /home/jaxc/FPGA/IP [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv analogdeviceinc.com:adi:axi_i2s_adi:1.0 axi_i2s_adi_0
+endgroup
+set_property location {2.5 803 40} [get_bd_cells axi_i2s_adi_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_i2s_adi_0/S_AXI]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_DMA_TYPE {0}] [get_bd_cells axi_i2s_adi_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_USE_DMA0 {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_DMA_TYPE {1}] [get_bd_cells axi_i2s_adi_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins axi_i2s_adi_0/DMA_TX_ACK] [get_bd_intf_pins processing_system7_0/DMA0_ACK]
+connect_bd_intf_net [get_bd_intf_pins axi_i2s_adi_0/DMA_TX_REQ] [get_bd_intf_pins processing_system7_0/DMA0_REQ]
+startgroup
+set_property -dict [list CONFIG.PCW_USE_DMA1 {1}] [get_bd_cells processing_system7_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins axi_i2s_adi_0/DMA_RX_ACK] [get_bd_intf_pins processing_system7_0/DMA1_ACK]
+connect_bd_intf_net [get_bd_intf_pins axi_i2s_adi_0/DMA_RX_REQ] [get_bd_intf_pins processing_system7_0/DMA1_REQ]
+connect_bd_net [get_bd_pins axi_i2s_adi_0/DMA_REQ_RX_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_i2s_adi_0/DMA_REQ_TX_ACLK] [get_bd_pins axi_i2s_adi_0/DMA_REQ_RX_ACLK]
+connect_bd_net [get_bd_pins axi_i2s_adi_0/DMA_REQ_TX_RSTN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+connect_bd_net [get_bd_pins axi_i2s_adi_0/DMA_REQ_RX_RSTN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+connect_bd_net [get_bd_pins processing_system7_0/DMA0_ACLK] [get_bd_pins processing_system7_0/DMA1_ACLK]
+set_property location {1.5 338 272} [get_bd_cells processing_system7_0]
+undo
+regenerate_bd_layout
+connect_bd_net [get_bd_pins processing_system7_0/DMA1_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+regenerate_bd_layout
+startgroup
+create_bd_port -dir I -from 0 -to 0 SDATA_I
+connect_bd_net [get_bd_pins /axi_i2s_adi_0/SDATA_I] [get_bd_ports SDATA_I]
+endgroup
+startgroup
+create_bd_port -dir O -from 0 -to 0 BCLK_O
+connect_bd_net [get_bd_pins /axi_i2s_adi_0/BCLK_O] [get_bd_ports BCLK_O]
+endgroup
+startgroup
+create_bd_port -dir O -from 0 -to 0 LRCLK_O
+connect_bd_net [get_bd_pins /axi_i2s_adi_0/LRCLK_O] [get_bd_ports LRCLK_O]
+endgroup
+startgroup
+create_bd_port -dir O -from 0 -to 0 SDATA_O
+connect_bd_net [get_bd_pins /axi_i2s_adi_0/SDATA_O] [get_bd_ports SDATA_O]
+endgroup
+startgroup
+create_bd_port -dir O MUTEN_O
+connect_bd_net [get_bd_pins /axi_i2s_adi_0/MUTEN_O] [get_bd_ports MUTEN_O]
+endgroup
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files /home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/top.bd] -top
+add_files -norecurse /home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/hdl/top_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+generate_target all [get_files /home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/top.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/top.bd]
+launch_runs top_processing_system7_0_0_synth_1
+wait_on_run top_processing_system7_0_0_synth_1
+launch_runs top_axi_i2s_adi_0_0_synth_1
+wait_on_run top_axi_i2s_adi_0_0_synth_1

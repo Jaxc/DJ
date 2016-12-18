@@ -1,0 +1,21 @@
+set_property PACKAGE_PIN K17 [get_ports {SDATA_I[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {SDATA_I[0]}]
+set_property PACKAGE_PIN L17 [get_ports {LRCLK_O[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LRCLK_O[0]}]
+set_property PACKAGE_PIN K18 [get_ports {BCLK_O[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {BCLK_O[0]}]
+set_property PACKAGE_PIN T19 [get_ports MUTEN_O]
+set_property IOSTANDARD LVCMOS33 [get_ports MUTEN_O]
+set_property PACKAGE_PIN M17 [get_ports {SDATA_O[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {SDATA_O[0]}]
+
+set_property PACKAGE_PIN M18 [get_ports {LRCLK_O_1[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LRCLK_O_1[0]}]
+set_property PACKAGE_PIN N18 [get_ports iic_0_scl_io]
+set_property IOSTANDARD LVCMOS33 [get_ports iic_0_scl_io]
+set_property PACKAGE_PIN N17 [get_ports iic_0_sda_io]
+set_property IOSTANDARD LVCMOS33 [get_ports iic_0_sda_io]
+
+
+set_false_path -from [list [get_pins top_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/I] [get_clocks clk_fpga_0]] -to [get_clocks clk_fpga_1]
+set_false_path -from [get_clocks clk_fpga_1] -to [get_clocks clk_fpga_0]

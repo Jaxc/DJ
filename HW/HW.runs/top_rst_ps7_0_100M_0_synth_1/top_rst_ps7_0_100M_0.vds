@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Dec 17 16:50:57 2016
+# Process ID: 11457
+# Current directory: /home/jaxc/FPGA/DJ-Jaxc/HW/HW.runs/top_rst_ps7_0_100M_0_synth_1
+# Command line: vivado -log top_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_rst_ps7_0_100M_0.tcl
+# Log file: /home/jaxc/FPGA/DJ-Jaxc/HW/HW.runs/top_rst_ps7_0_100M_0_synth_1/top_rst_ps7_0_100M_0.vds
+# Journal file: /home/jaxc/FPGA/DJ-Jaxc/HW/HW.runs/top_rst_ps7_0_100M_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_rst_ps7_0_100M_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1061.184 ; gain = 149.297 ; free physical = 411 ; free virtual = 3775
+INFO: [Synth 8-638] synthesizing module 'top_rst_ps7_0_100M_0' [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ip/top_rst_ps7_0_100M_0/synth/top_rst_ps7_0_100M_0.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [/opt/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (1#1) [/opt/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'top_rst_ps7_0_100M_0' (7#1) [/home/jaxc/FPGA/DJ-Jaxc/HW/HW.srcs/sources_1/bd/top/ip/top_rst_ps7_0_100M_0/synth/top_rst_ps7_0_100M_0.vhd:71]
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1102.660 ; gain = 190.773 ; free physical = 368 ; free virtual = 3733
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1102.660 ; gain = 190.773 ; free physical = 368 ; free virtual = 3733
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1422.887 ; gain = 0.004 ; free physical = 180 ; free virtual = 3533
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 177 ; free virtual = 3532
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 177 ; free virtual = 3532
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 177 ; free virtual = 3532
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 174 ; free virtual = 3529
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 174 ; free virtual = 3528
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 171 ; free virtual = 3529
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 171 ; free virtual = 3529
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 171 ; free virtual = 3529
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 171 ; free virtual = 3529
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 171 ; free virtual = 3529
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 171 ; free virtual = 3529
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 171 ; free virtual = 3529
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 171 ; free virtual = 3529
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 171 ; free virtual = 3529
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     5|
+|2     |LUT2  |     9|
+|3     |LUT3  |     1|
+|4     |LUT4  |     6|
+|5     |LUT5  |     3|
+|6     |LUT6  |     1|
+|7     |SRL16 |     1|
+|8     |FDR   |     8|
+|9     |FDRE  |    28|
+|10    |FDSE  |     4|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1422.887 ; gain = 511.000 ; free physical = 171 ; free virtual = 3529
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1422.891 ; gain = 424.285 ; free physical = 167 ; free virtual = 3525
