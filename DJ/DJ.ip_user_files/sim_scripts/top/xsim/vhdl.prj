@@ -1,0 +1,12 @@
+vhdl xil_defaultlib "../../../bd/top/ipshared/ea44/sources_1/imports/Jaxc_I2S_1.0/hdl/AXI_4_lite_package.vhd" 
+vhdl xil_defaultlib "../../../bd/top/ipshared/ea44/sources_1/imports/Jaxc_I2S_1.0/hdl/cross_domain_bit.vhd" 
+vhdl xil_defaultlib "../../../bd/top/ipshared/ea44/sources_1/imports/Jaxc_I2S_1.0/hdl/cross_domain_bus.vhd" 
+vhdl xil_defaultlib "../../../bd/top/ipshared/ea44/sources_1/imports/new/CLK_DIV.vhd" 
+vhdl xil_defaultlib "../../../bd/top/ipshared/ea44/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_Slave_axi.vhd" 
+vhdl xil_defaultlib "../../../bd/top/ipshared/ea44/sources_1/imports/Jaxc_I2S_1.0/hdl/I2S_controller.vhd" 
+vhdl xil_defaultlib "../../../bd/top/ipshared/ea44/sources_1/imports/Jaxc_I2S_1.0/hdl/Jaxc_I2S_v1_0.vhd" 
+vhdl xil_defaultlib "../../../bd/top/ip/top_Jaxc_I2S_0_0/sim/top_Jaxc_I2S_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/top/ip/top_rst_ps7_0_100M_0/sim/top_rst_ps7_0_100M_0.vhd" 
+vhdl xil_defaultlib "../../../bd/top/hdl/top.vhd" 
+
+nosort

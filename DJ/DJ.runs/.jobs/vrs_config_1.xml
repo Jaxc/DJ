@@ -1,5 +1,14 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
-	<Run Id="synth_1" LaunchDir="/home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_processing_system7_0_0_synth_1" LaunchDir="/home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/top_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_Jaxc_I2S_0_0_synth_1" LaunchDir="/home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/top_Jaxc_I2S_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_rst_ps7_0_100M_0_synth_1" LaunchDir="/home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/top_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_auto_pc_0_synth_1" LaunchDir="/home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/top_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/jaxc/FPGA/DJ-Jaxc/DJ/DJ.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="top_processing_system7_0_0_synth_1"/>
+		<Parent Id="top_Jaxc_I2S_0_0_synth_1"/>
+		<Parent Id="top_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="top_auto_pc_0_synth_1"/>
+	</Run>
 </Runs>
 

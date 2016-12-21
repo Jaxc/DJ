@@ -1,0 +1,107 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (lin64) Build 1682563 Mon Oct 10 19:07:26 MDT 2016
+| Date         : Wed Dec 21 20:33:22 2016
+| Host         : Lappytoppy running 64-bit Linux Mint 17.2 Rafaela
+| Command      : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
+| Design       : top_wrapper
+| Device       : xc7z010
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    38 |
+| Unused register locations in slices containing registers |    95 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             110 |           32 |
+| No           | No                    | Yes                    |             202 |           44 |
+| No           | Yes                   | No                     |             176 |           50 |
+| Yes          | No                    | No                     |             354 |           87 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             135 |           35 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                 Clock Signal                |                                                                       Enable Signal                                                                      |                                                           Set/Reset Signal                                                          | Slice Load Count | Bel Load Count |
++---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  top_i/Jaxc_I2S_0/U0/MCLK_gen/inst/clk_out1 |                                                                                                                                                          | top_i/Jaxc_I2S_0/U0/slave/new_input_sample/SR[0]                                                                                    |                1 |              2 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/bresp_push                               |                                                                                                                                     |                1 |              2 |
+| ~top_i/Jaxc_I2S_0/U0/BCLK_gen/BCLK_BUFG     |                                                                                                                                                          |                                                                                                                                     |                1 |              3 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/Jaxc_I2S_0/U0/slave/crnt[write_state]                                                                                                              |                                                                                                                                     |                2 |              3 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_wrap_reg[0]                    | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axlen_cnt_reg[7] |                1 |              4 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[3][0]                   | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[7] |                2 |              4 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  |                                                                                                                                                          | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/s_ready_i_reg_0                |                3 |              4 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  |                                                                                                                                                          | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_valid_i_reg_0                |                3 |              4 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  |                                                                                                                                                          | top_i/rst_ps7_0_100M/U0/EXT_LPF/lpf_int                                                                                             |                1 |              4 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/rst_ps7_0_100M/U0/SEQ/seq_cnt_en                                                                                                                   | top_i/rst_ps7_0_100M/U0/SEQ/SEQ_COUNTER/clear                                                                                       |                1 |              6 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/mhandshake_r                                        | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/SR[0]               |                3 |              8 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/Jaxc_I2S_0/U0/slave/req_sample/E[0]                                                                                                                | top_i/Jaxc_I2S_0/U0/slave/req_sample/cnt_out_reg[0][0]                                                                              |                2 |              8 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/Jaxc_I2S_0/U0/slave/loc_addr[8]_i_1_n_0                                                                                                            | top_i/Jaxc_I2S_0/U0/slave/new_input_sample/SR[0]                                                                                    |                4 |              9 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[0]_i_1_n_0 |                                                                                                                                     |                3 |             12 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/wrap_boundary_axaddr_r_reg[11][0]     |                                                                                                                                     |                5 |             12 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/E[0]                                  |                                                                                                                                     |                6 |             12 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axaddr_incr_reg[11]                   |                                                                                                                                     |                3 |             12 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_push_r                                            |                                                                                                                                     |                4 |             13 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/rst_ps7_0_100M/U0/peripheral_aresetn[0]                                                                                                            |                                                                                                                                     |                4 |             13 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/p_1_in                                               |                                                                                                                                     |                2 |             14 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/skid_buffer_reg[0]_0                                 |                                                                                                                                     |                4 |             14 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[3][0]                   |                                                                                                                                     |                8 |             20 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/b_push                                |                                                                                                                                     |                5 |             20 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_wrap_reg[0]                    |                                                                                                                                     |                8 |             20 |
+| ~top_i/Jaxc_I2S_0/U0/BCLK_gen/BCLK_BUFG     | top_i/Jaxc_I2S_0/U0/slave/I2S/nxt[sample_r]_inferred__0/i__n_0                                                                                           | top_i/Jaxc_I2S_0/U0/slave/new_input_sample/SR[0]                                                                                    |                7 |             32 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/m_payload_i_reg[0]_1[0]               |                                                                                                                                     |                7 |             32 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/s_axi_arready                                       |                                                                                                                                     |                7 |             32 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/E[0]                                  |                                                                                                                                     |                5 |             32 |
+| ~top_i/Jaxc_I2S_0/U0/BCLK_gen/BCLK_BUFG     | top_i/Jaxc_I2S_0/U0/slave/I2S/nxt[state][0]                                                                                                              | top_i/Jaxc_I2S_0/U0/slave/new_input_sample/SR[0]                                                                                    |               10 |             32 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/Jaxc_I2S_0/U0/slave/slv_reg_in                                                                                                                     | top_i/Jaxc_I2S_0/U0/slave/new_input_sample/SR[0]                                                                                    |                5 |             32 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/s_axi_awready                                       |                                                                                                                                     |                7 |             32 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/wr_en0                               |                                                                                                                                     |                9 |             34 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/skid_buffer_reg[0]_0                                 |                                                                                                                                     |                8 |             47 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/p_1_in                                               |                                                                                                                                     |                8 |             47 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  |                                                                                                                                                          | top_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/areset_d1                                     |               14 |             58 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  |                                                                                                                                                          |                                                                                                                                     |               32 |            108 |
+| ~top_i/Jaxc_I2S_0/U0/BCLK_gen/BCLK_BUFG     |                                                                                                                                                          | top_i/Jaxc_I2S_0/U0/slave/new_input_sample/SR[0]                                                                                    |               24 |            134 |
+|  top_i/processing_system7_0/inst/FCLK_CLK0  |                                                                                                                                                          | top_i/Jaxc_I2S_0/U0/slave/new_input_sample/SR[0]                                                                                    |               48 |            172 |
++---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     2 |
+| 3      |                     2 |
+| 4      |                     5 |
+| 6      |                     1 |
+| 8      |                     2 |
+| 9      |                     1 |
+| 12     |                     4 |
+| 13     |                     2 |
+| 14     |                     2 |
+| 16+    |                    17 |
++--------+-----------------------+
+
+
